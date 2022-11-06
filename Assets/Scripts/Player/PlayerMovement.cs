@@ -1,8 +1,10 @@
+using Game_Service;
+using Game_Service.Services;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private MovementInput movementInput;
+    private PlayerInput playerInput;
     [SerializeField] private Vector2 movementBoundsMin;
     [SerializeField] private Vector2 movementBoundsMax;
 
@@ -10,12 +12,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        movementInput = GetComponent<MovementInput>();
+        playerInput = GetComponent<PlayerInput>();
     }
 
     void FixedUpdate()
     {
-        ApplyMovementInput();
+        if (GameServiceProvider.GetService<IGameState>().GameState == GameState.Setup)
+            ApplyMovementInput();
     }
 
     private void ApplyMovementInput()
@@ -31,6 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 GetMovementDirection()
     {
-        return new Vector3(movementInput.HorizontalInput, movementInput.VerticalInput, 0);
+        return new Vector3(playerInput.HorizontalInput, playerInput.VerticalInput, 0);
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Game_Service.Services;
+using UnityEngine;
 
 namespace Game_Service
 {
@@ -11,7 +12,7 @@ namespace Game_Service
             Debug.Log("Registering backend services...");
             GameServiceRegistry<IGameService> gameServiceRegistry = new GameServiceRegistry<IGameService>();
             gameServiceRegistry.StartRegistration();
-            // gameServiceRegistry.RegisterService<ITurnService, TurnService>(backendServices.turnService);
+            gameServiceRegistry.RegisterService<IGameState, GameStateManager>(backendServices.GameStateManager);
             gameServiceRegistry.FinishRegistration();
             Registry = gameServiceRegistry;
         }
@@ -24,5 +25,11 @@ namespace Game_Service
 
     public class BackendServices
     {
+        public BackendServices(GameStateManager gameStateManager)
+        {
+            GameStateManager = gameStateManager;
+        }
+
+        public GameStateManager GameStateManager { get; }
     }
 }
