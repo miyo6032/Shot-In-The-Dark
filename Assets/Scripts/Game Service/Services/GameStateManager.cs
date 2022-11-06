@@ -13,6 +13,7 @@
     public enum GameState
     {
         Setup,
-        Emp
+        Emp,
+        TargetHit
     }
 }
