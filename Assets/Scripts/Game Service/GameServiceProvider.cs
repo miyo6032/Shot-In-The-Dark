@@ -1,4 +1,5 @@
 ﻿using Game_Service.Services;
+using Timer;
 using UnityEngine;
 
 namespace Game_Service
@@ -13,6 +14,7 @@ namespace Game_Service
             GameServiceRegistry<IGameService> gameServiceRegistry = new GameServiceRegistry<IGameService>();
             gameServiceRegistry.StartRegistration();
             gameServiceRegistry.RegisterService<IGameState, GameStateManager>(backendServices.GameStateManager);
+            gameServiceRegistry.RegisterService<IGameTimer, CountdownTimer>(backendServices.CountdownTimer);
             gameServiceRegistry.FinishRegistration();
             Registry = gameServiceRegistry;
         }
@@ -25,11 +27,13 @@ namespace Game_Service
 
     public class BackendServices
     {
-        public BackendServices(GameStateManager gameStateManager)
+        public BackendServices(GameStateManager gameStateManager, CountdownTimer countdownTimer)
         {
             GameStateManager = gameStateManager;
+            CountdownTimer = countdownTimer;
         }
 
         public GameStateManager GameStateManager { get; }
+        public CountdownTimer CountdownTimer { get; }
     }
 }
