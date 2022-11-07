@@ -2,10 +2,10 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor
+namespace Custom_Editors
 {
     [CustomEditor(typeof(PatrolPath))]
-    public class PatrolPathGizmo : UnityEditor.Editor
+    public class PatrolPathGizmo : Editor
     {
         public void OnSceneGUI()
         {

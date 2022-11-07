@@ -21,7 +21,6 @@ namespace Player
         {
             if (gameStateService.GameState == GameState.Setup)
             {
-                Debug.Log("Emp Activated");
                 gameStateService.GameState = GameState.Emp;
                 GameServiceProvider.GetService<IGameTimer>().SetTimer(5, OnTimerOut, f => $"{f:0} seconds to make shot");
             }
