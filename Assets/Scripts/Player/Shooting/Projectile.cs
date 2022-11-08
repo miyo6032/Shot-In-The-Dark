@@ -23,8 +23,12 @@ namespace Player
             {
                 Debug.Log("Target Hit!");
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.TargetHit;
-                Destroy(gameObject);
             }
+            else if (obj.CompareTag("Bystander"))
+            {
+                Debug.Log("Bystander Hit!");
+            }
+            Destroy(gameObject);
         }
 
         private void FixedUpdate()
