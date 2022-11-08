@@ -903,7 +903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 1
   projectilePrefab: {fileID: 2506141855850113123, guid: f9171c49c5c26c84e98f144ffe08bcdf, type: 3}
-  projectileSpeed: 10
+  projectileSpeed: 20
 --- !u!1 &1010784421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1953080455}
-  paceDuration: 1
+  maxSpeed: 7
 --- !u!58 &1694618830
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

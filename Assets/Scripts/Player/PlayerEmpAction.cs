@@ -22,15 +22,6 @@ namespace Player
             if (gameStateService.GameState == GameState.Setup)
             {
                 gameStateService.GameState = GameState.Emp;
-                GameServiceProvider.GetService<IGameTimer>().SetTimer(5, OnTimerOut, f => $"{f:0} seconds to make shot");
-            }
-        }
-
-        private static void OnTimerOut()
-        {
-            if (GameServiceProvider.GetService<IGameState>().GameState == GameState.Emp)
-            {
-                Debug.Log("Timer ran out");
             }
         }
     }

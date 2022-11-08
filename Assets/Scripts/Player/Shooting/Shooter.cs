@@ -26,6 +26,7 @@ namespace Player.Shooting
 
             if (currentCooldown == 0 && Input.GetMouseButton(0))
             {
+                GameServiceProvider.GetService<IGameTimer>().StopTimer();
                 // audioSource.PlayOneShot(shootAudio);
                 Projectile projectile = Instantiate(projectilePrefab, transform.position, rotationFromDirection);
                 // audioSource.PlayOneShot(shootAudio);

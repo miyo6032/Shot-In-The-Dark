@@ -13,6 +13,7 @@ namespace Timer
         private Action actionWhenTime;
         private Func<float, string> getMessage;
         private bool actionPassed;
+        private bool timerStopped;
 
         public void SetTimer(float time, Action action, Func<float, string> message)
         {
@@ -21,10 +22,18 @@ namespace Timer
             secondsTillTime = time;
             actionWhenTime = action;
             getMessage = message;
+            timerStopped = false;
+        }
+
+        public void StopTimer()
+        {
+            timerStopped = true;
         }
 
         public void Update()
         {
+            if (timerStopped) return;
+            
             passedTime += Time.deltaTime;
             float remainingTime = Mathf.Max(0, secondsTillTime - passedTime);
             text.text = getMessage(remainingTime);

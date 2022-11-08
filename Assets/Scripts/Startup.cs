@@ -14,12 +14,21 @@ namespace DefaultNamespace
         {
             GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer));
             
-            GameServiceProvider.GetService<IGameTimer>().SetTimer(10, DoEmp, f => $"{f:0} seconds until EMP");
+            GameServiceProvider.GetService<IGameTimer>().SetTimer(15, OnTimerOut, f => $"{f:0} seconds to make shot");
+            // GameServiceProvider.GetService<IGameTimer>().SetTimer(10, DoEmp, f => $"{f:0} seconds until EMP");
+        }
+        
+        private static void OnTimerOut()
+        {
+            if (GameServiceProvider.GetService<IGameState>().GameState == GameState.Emp)
+            {
+                Debug.Log("Timer ran out");
+            }
         }
 
-        private void DoEmp()
-        {
-            PlayerEmpAction.DoEmp(GameServiceProvider.GetService<IGameState>());
-        }
+        // private void DoEmp()
+        // {
+            // PlayerEmpAction.DoEmp(GameServiceProvider.GetService<IGameState>());
+        // }
     }
 }
