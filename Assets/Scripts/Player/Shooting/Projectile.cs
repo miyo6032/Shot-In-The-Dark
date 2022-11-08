@@ -28,6 +28,10 @@ namespace Player
             {
                 Debug.Log("Bystander Hit!");
             }
+            else if (obj.CompareTag("Obstacle"))
+            {
+                Debug.Log("Obstacle Hit!");
+            }
             Destroy(gameObject);
         }
 
