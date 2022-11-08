@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 1953080455}
-  maxSpeed: 1
+  paceDuration: 1
 --- !u!58 &1694618830
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1765,6 +1765,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {x: -5.7607403, y: 0}
   endPosition: {x: 6.34459, y: 0}
+  startPosPause: 0.5
+  endPosPause: 0
+  paceDuration: 3
 --- !u!1 &2144861647
 GameObject:
   m_ObjectHideFlags: 0

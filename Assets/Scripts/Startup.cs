@@ -14,7 +14,7 @@ namespace DefaultNamespace
         {
             GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer));
             
-            GameServiceProvider.GetService<IGameTimer>().SetTimer(5, DoEmp, f => $"{f:0} seconds until EMP");
+            GameServiceProvider.GetService<IGameTimer>().SetTimer(10, DoEmp, f => $"{f:0} seconds until EMP");
         }
 
         private void DoEmp()

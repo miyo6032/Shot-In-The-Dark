@@ -1,5 +1,6 @@
 ﻿using Pathing;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Platformer.Mechanics
 {
@@ -43,7 +44,7 @@ namespace Platformer.Mechanics
 
         void FixedUpdate()
         {
-            mover ??= path.CreateMover(maxSpeed * 0.5f);
+            mover ??= path.CreateMover();
             transform.position = mover.Position;
         }
     }
