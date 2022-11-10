@@ -1,6 +1,7 @@
 using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
+using Util;
 
 namespace Player.Shooting
 {
@@ -20,7 +21,7 @@ namespace Player.Shooting
             
             currentCooldown = Mathf.Max(currentCooldown - Time.deltaTime, 0);
             Vector2 direction2D = CalculateShootDirection2D(Input.mousePosition);
-            var rotationFromDirection = Get2DRotationFromDirection(direction2D);
+            var rotationFromDirection = MathUtils.Get2DRotationFromDirection(direction2D);
 
             // cannonPivot.rotation = rotationFromDirection;
 
@@ -42,12 +43,6 @@ namespace Player.Shooting
             Vector2 worldMousePos2d = worldMousePos;
             Vector2 pos2d = transform.position;
             return (worldMousePos2d - pos2d).normalized;
-        }
-
-        private static Quaternion Get2DRotationFromDirection(Vector3 dir)
-        {
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            return Quaternion.AngleAxis(angle, Vector3.forward);
         }
     }
 }

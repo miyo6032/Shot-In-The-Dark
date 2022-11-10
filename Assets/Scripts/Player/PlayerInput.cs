@@ -8,8 +8,8 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        VerticalInput = Input.GetAxis("Vertical");
-        HorizontalInput = Input.GetAxis("Horizontal");
+        VerticalInput = Input.GetAxisRaw("Vertical");
+        HorizontalInput = Input.GetAxisRaw("Horizontal");
         EmpInput = Input.GetKeyDown(KeyCode.Space);
     }
 }
