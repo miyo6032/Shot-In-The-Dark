@@ -20,7 +20,7 @@ namespace DefaultNamespace
         
         private static void OnTimerOut()
         {
-            if (GameServiceProvider.GetService<IGameState>().GameState == GameState.Emp)
+            if (GameServiceProvider.GetService<IGameState>().GameState == GameState.IsDark)
             {
                 Debug.Log("Timer ran out");
             }

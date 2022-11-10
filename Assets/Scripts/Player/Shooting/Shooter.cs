@@ -16,7 +16,7 @@ namespace Player.Shooting
 
         public void Update()
         {
-            if (GameServiceProvider.GetService<IGameState>().GameState != GameState.Emp) return;
+            if (GameServiceProvider.GetService<IGameState>().GameState != GameState.IsDark) return;
             
             currentCooldown = Mathf.Max(currentCooldown - Time.deltaTime, 0);
             Vector2 direction2D = CalculateShootDirection2D(Input.mousePosition);

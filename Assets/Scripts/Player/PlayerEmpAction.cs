@@ -21,7 +21,7 @@ namespace Player
         {
             if (gameStateService.GameState == GameState.Setup)
             {
-                gameStateService.GameState = GameState.Emp;
+                gameStateService.GameState = GameState.EmpActivated;
             }
         }
     }

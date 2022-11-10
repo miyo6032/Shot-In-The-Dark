@@ -36,7 +36,8 @@ namespace Game_Service.Services
     public enum GameState
     {
         Setup,
-        Emp,
+        EmpActivated,
+        IsDark,
         TargetHit
     }
 }

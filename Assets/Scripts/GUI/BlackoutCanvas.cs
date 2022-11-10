@@ -1,5 +1,4 @@
-﻿using System;
-using Game_Service;
+﻿using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
 
@@ -14,7 +13,8 @@ public class BlackoutCanvas : MonoBehaviour
 
     private void FadeInCanvasGroup(GameState gameState)
     {
-        if (gameState == GameState.Emp)
-            LeanTween.value(gameObject, f => canvasGroup.alpha = f, 0f, 1f, 2.0f);
+        if (gameState == GameState.EmpActivated)
+            LeanTween.value(gameObject, f => canvasGroup.alpha = f, 0f, 1f, 2.0f)
+                .setOnComplete(() => GameServiceProvider.GetService<IGameState>().GameState = GameState.IsDark);
     }
 }
