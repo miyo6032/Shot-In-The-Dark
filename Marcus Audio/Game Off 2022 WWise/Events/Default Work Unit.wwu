@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Crowd_Noise" ID="{A90D7A6C-7756-4E1F-BFD9-530139BE79AE}">
+					<ChildrenList>
+						<Action Name="" ID="{D71C7717-8FD2-4E00-944F-0E3E262B1C07}" ShortID="339718245">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crowd Talking" ID="{701587FE-D41E-4C6B-9401-575DFD894605}" WorkUnitID="{6B4D1064-0326-4E86-8D40-3AC257FBDCF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AD7B0E0C-5045-4012-82D6-026ED310505D}" ShortID="109087343">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crowd Footsteps" ID="{D1419462-94D2-4B5A-900B-B715CFE05E18}" WorkUnitID="{6B4D1064-0326-4E86-8D40-3AC257FBDCF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Start" ID="{F538189D-5964-436A-8C94-DC102735B6ED}">
+					<ChildrenList>
+						<Action Name="" ID="{04412AF9-E00E-4381-B225-7A239DD9A08E}" ShortID="256450989">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Before_Diamond_Bass_Loop" ID="{1A5D6629-5335-4605-AD68-0ACE2C0E8464}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Movement" ID="{46ECFE1B-6954-4450-9876-2B048CA87F98}">
+					<ChildrenList>
+						<Action Name="" ID="{CF0B04BC-718D-43C9-90C0-364532A2423B}" ShortID="1045513665"/>
+						<Action Name="" ID="{F8BE763A-2096-44F0-9EA5-00DA147CC361}" ShortID="994325892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Movement" ID="{8A4A490E-4778-4B3B-83E4-62619FE39324}" WorkUnitID="{FE68D8E9-2C58-442A-92A2-D5BFFB3AEEA7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Enter" ID="{90077803-1A20-41ED-816E-0BD0F29AB203}">
+					<ChildrenList>
+						<Action Name="" ID="{E9ECBB9C-4F24-4A58-BD3B-59820B892914}" ShortID="723607265">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Enter" ID="{DCC5175A-1764-4719-897E-EEF86F1ABEA7}" WorkUnitID="{FE68D8E9-2C58-442A-92A2-D5BFFB3AEEA7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Movement_Footstep" ID="{6F071441-0C9B-458A-8ED5-3100AD7F9EE0}">
+					<ChildrenList>
+						<Action Name="" ID="{29C476D4-5271-4633-9BE8-C52CC99A5601}" ShortID="708646778">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{F885519E-F46A-44E9-9704-0FD0EF64BCD8}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Shoot" ID="{2A9B3904-82E8-4F21-81EE-4205ED0B8BF9}">
+					<ChildrenList>
+						<Action Name="" ID="{ADF7C344-0CF3-40DF-A449-58A1D82A9967}" ShortID="350039279">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shoot" ID="{CAC689DF-94A4-4504-ADEC-2B281F644405}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Hit" ID="{CB00932B-3573-44C7-B6E6-C1BD7CD39135}">
+					<ChildrenList>
+						<Action Name="" ID="{551190FA-42A5-479E-8FCF-A064B672849D}" ShortID="516752429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror Body Drop 03" ID="{645372B5-B83B-435F-8369-E56F2A7F5524}" WorkUnitID="{A2AFF126-4516-46DB-B8B4-34DAB421387D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{15440B02-3921-4B8F-A660-60F7242089C4}" ShortID="1032521675">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Uhh soft 1" ID="{4099C672-3EAA-48D2-8749-2DC9EBE1389F}" WorkUnitID="{A2AFF126-4516-46DB-B8B4-34DAB421387D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hit_Target" ID="{F9C8B2A5-E5F6-4569-A0A1-256D322B3D03}">
+					<ChildrenList>
+						<Action Name="" ID="{0CA37541-650F-4CC1-8DA4-715F14A00F33}" ShortID="65674026">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact Vegetables Hit 02" ID="{8C6FD3A3-BB5F-42EB-985E-725A19156D41}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{96EB1ADB-D4FF-4658-8646-32D94EB6A4B6}" ShortID="300860123">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Industry Lid Plastic Tube Lid Opening 01" ID="{CB7234C3-D90E-4F9F-BD90-461FF54C807F}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
