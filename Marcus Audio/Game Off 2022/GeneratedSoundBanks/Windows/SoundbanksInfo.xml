@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\WWise\Game Off 2022\</ProjectRoot>
+		<SourceFilesRoot>D:\WWise\Game Off 2022\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\WWise\Game Off 2022\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\WWise\Game Off 2022\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3005477978">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3714975495" Name="Crowd_Noise" ObjectPath="\Events\Default Work Unit\Crowd_Noise">
+					<IncludedMemoryFiles>
+						<File Id="87964442" Language="SFX">
+							<ShortName>Crowd Footsteps.wav</ShortName>
+							<Path>SFX\Crowd Footsteps_D79FB2B7.wem</Path>
+						</File>
+						<File Id="545505773" Language="SFX">
+							<ShortName>crowd-talking-10.wav</ShortName>
+							<Path>SFX\crowd-talking-10_A8A52D7F.wem</Path>
+						</File>
+						<File Id="855470072" Language="SFX">
+							<ShortName>crowd-talking-5.wav</ShortName>
+							<Path>SFX\crowd-talking-5_6A803F86.wem</Path>
+						</File>
+						<File Id="976944957" Language="SFX">
+							<ShortName>crowd-talking-8.wav</ShortName>
+							<Path>SFX\crowd-talking-8_BE2F16CA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1171885424" Name="Hit_Target" ObjectPath="\Events\Default Work Unit\Hit_Target">
+					<IncludedMemoryFiles>
+						<File Id="186127181" Language="SFX">
+							<ShortName>Industry Lid Plastic Tube Lid Opening 01.wav</ShortName>
+							<Path>SFX\Industry Lid Plastic Tube Lid Opening 01_10C4C929.wem</Path>
+						</File>
+						<File Id="1001382648" Language="SFX">
+							<ShortName>Impact Vegetables Hit 02.wav</ShortName>
+							<Path>SFX\Impact Vegetables Hit 02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1952436935" Name="Menu_Enter" ObjectPath="\Events\Default Work Unit\Menu_Enter">
+					<IncludedMemoryFiles>
+						<File Id="478377020" Language="SFX">
+							<ShortName>Menu_Enter.wav</ShortName>
+							<Path>SFX\Menu_Enter_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2710292464" Name="Menu_Movement" ObjectPath="\Events\Default Work Unit\Menu_Movement">
+					<IncludedMemoryFiles>
+						<File Id="29000921" Language="SFX">
+							<ShortName>Menu_Movement.wav</ShortName>
+							<Path>SFX\Menu_Movement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start">
+					<IncludedMemoryFiles>
+						<File Id="8914327" Language="SFX">
+							<ShortName>Before_Diamond_Bass_Loop.wav</ShortName>
+							<Path>SFX\Before_Diamond_Bass_Loop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3554186090" Name="Play_Movement_Footstep" ObjectPath="\Events\Default Work Unit\Play_Movement_Footstep">
+					<IncludedMemoryFiles>
+						<File Id="718007540" Language="SFX">
+							<ShortName>Step 1.wav</ShortName>
+							<Path>SFX\Step 1_893058C0.wem</Path>
+						</File>
+						<File Id="889976677" Language="SFX">
+							<ShortName>Step 4.wav</ShortName>
+							<Path>SFX\Step 4_0DE36C32.wem</Path>
+						</File>
+						<File Id="907733002" Language="SFX">
+							<ShortName>Step 3.wav</ShortName>
+							<Path>SFX\Step 3_13DC3ED9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="871813740" Name="Player_Hit" ObjectPath="\Events\Default Work Unit\Player_Hit">
+					<IncludedMemoryFiles>
+						<File Id="308699503" Language="SFX">
+							<ShortName>Uhh soft 1.wav</ShortName>
+							<Path>SFX\Uhh soft 1_013D3003.wem</Path>
+						</File>
+						<File Id="725480074" Language="SFX">
+							<ShortName>Horror Body Drop 03.wav</ShortName>
+							<Path>SFX\Horror Body Drop 03_8E7C8BFC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4004702906" Name="Player_Shoot" ObjectPath="\Events\Default Work Unit\Player_Shoot">
+					<IncludedMemoryFiles>
+						<File Id="1046075124" Language="SFX">
+							<ShortName>560011__combatsfx4you__gun-silencer.wav</ShortName>
+							<Path>SFX\560011__combatsfx4you__gun-silencer_255702FA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
