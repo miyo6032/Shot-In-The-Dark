@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A2AFF126-4516-46DB-B8B4-34DAB421387D}" SchemaVersion="103" RootDocumentID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" ParentDocumentID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}">
+	<AudioObjects>
+		<WorkUnit Name="Target" ID="{A2AFF126-4516-46DB-B8B4-34DAB421387D}" OwnerID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Horror Body Drop 03" ID="{645372B5-B83B-435F-8369-E56F2A7F5524}" ShortID="530745318">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror Body Drop 03" ID="{9879EE24-8942-466B-B414-639CF89BF4C8}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0377341040462428"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0628901734104046"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.671352601156069"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Horror Body Drop 03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="725480074"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror Body Drop 03" ID="{9879EE24-8942-466B-B414-639CF89BF4C8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Uhh soft 1" ID="{4099C672-3EAA-48D2-8749-2DC9EBE1389F}" ShortID="291169315">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Uhh soft 1" ID="{C672AB06-BDD8-41C2-858F-1E0096930973}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0305067437379576"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0171600433526011"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.131560332369942"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.457601156069364"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Uhh soft 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="308699503"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Uhh soft 1" ID="{C672AB06-BDD8-41C2-858F-1E0096930973}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
