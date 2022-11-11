@@ -2,6 +2,7 @@ using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
 using Util;
+using Event = AK.Wwise.Event;
 
 namespace Player.Shooting
 {
@@ -10,6 +11,8 @@ namespace Player.Shooting
         [SerializeField] float cooldown;
         [SerializeField] private Projectile projectilePrefab;
         [SerializeField] private float projectileSpeed;
+
+        [SerializeField] private Event shootSoundEvent;
         // [SerializeField] private Transform cannonPivot;
         // [SerializeField] private AudioClip shootAudio;
         // [SerializeField] private AudioSource audioSource;
@@ -34,6 +37,7 @@ namespace Player.Shooting
                 // bullet.Init(gameTimer, direction2D * bulletSpeed, 0, BulletStructure, bulletPrefab, audioSource);
                 projectile.Init(direction2D * projectileSpeed);
                 currentCooldown = cooldown;
+                shootSoundEvent.Post(gameObject);
             }
         }
     }

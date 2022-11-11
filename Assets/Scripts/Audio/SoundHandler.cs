@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
+using Event = AK.Wwise.Event;
 
-public class AudioMusic : MonoBehaviour
+public class SoundHandler : MonoBehaviour
 {
-
     // Wwise References //
     [Header("Wwise Audio Events:")]
-    public AK.Wwise.Event FactoryAmbience;
+    public Event music;
 
     private void Start()
     {
-        FactoryAmbience.Post(gameObject);
+        music.Post(gameObject);
     }
 }

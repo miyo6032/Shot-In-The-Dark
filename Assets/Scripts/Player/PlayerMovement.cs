@@ -2,6 +2,7 @@ using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
 using Util;
+using Event = AK.Wwise.Event;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 movementBoundsMax;
     [SerializeField] private Transform visual;
     [SerializeField] private Animator animator;
+    [SerializeField] private Event movementSoundEvent;
 
     public float speed = 5;
     private static readonly int Speed = Animator.StringToHash("Speed");
+    private bool soundPlaying;
 
     void Start()
     {
@@ -35,8 +38,18 @@ public class PlayerMovement : MonoBehaviour
         var boundedMovement = new Vector2(boundedPosX, boundedPosY);
         position = boundedMovement;
         transform.position = position;
-        
+
+        PlayFootstepsSound(movementDirection);
         AnimateMovement(movementDirection);
+    }
+
+    private void PlayFootstepsSound(Vector3 movementDirection)
+    {
+        if (movementDirection.sqrMagnitude > 0.5f && !soundPlaying)
+        {
+            soundPlaying = true;
+            movementSoundEvent.Post(gameObject, 1, (cookie, type, info) => soundPlaying = false);
+        }
     }
 
     private void AnimateMovement(Vector3 movementDirection)
