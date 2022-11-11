@@ -20,7 +20,7 @@ namespace Player.Shooting
             if (GameServiceProvider.GetService<IGameState>().GameState != GameState.IsDark) return;
             
             currentCooldown = Mathf.Max(currentCooldown - Time.deltaTime, 0);
-            Vector2 direction2D = CalculateShootDirection2D(Input.mousePosition);
+            Vector2 direction2D = MathUtils.CalculateShootDirection2D(Input.mousePosition, transform.position);
             var rotationFromDirection = MathUtils.Get2DRotationFromDirection(direction2D);
 
             // cannonPivot.rotation = rotationFromDirection;
@@ -35,14 +35,6 @@ namespace Player.Shooting
                 projectile.Init(direction2D * projectileSpeed);
                 currentCooldown = cooldown;
             }
-        }
-
-        private Vector2 CalculateShootDirection2D(Vector3 mousePos)
-        {
-            Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            Vector2 worldMousePos2d = worldMousePos;
-            Vector2 pos2d = transform.position;
-            return (worldMousePos2d - pos2d).normalized;
         }
     }
 }
