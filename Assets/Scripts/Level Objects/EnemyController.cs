@@ -10,10 +10,10 @@ namespace Platformer.Mechanics
     [RequireComponent( typeof(Collider2D))]
     public class EnemyController : MonoBehaviour
     {
-        public PatrolPath path;
+        public NPatrolPath path;
         // public AudioClip ouch;
 
-        private PatrolPath.Mover mover;
+        private NMover mover;
         // internal AnimationController control;
         // internal Collider2D _collider;
         // internal AudioSource _audio;
@@ -44,7 +44,7 @@ namespace Platformer.Mechanics
 
         void FixedUpdate()
         {
-            mover ??= path.CreateMover();
+            mover ??= new NMover(path);
             transform.position = mover.Position;
         }
     }
