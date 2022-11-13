@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Game_Service.Front_End_Services;
+using UnityEngine;
 
 namespace Game_Service
 {
@@ -11,7 +12,7 @@ namespace Game_Service
             Debug.Log("Registering frontend services...");
             GameServiceRegistry<IFrontEndService> gameServiceRegistry = new GameServiceRegistry<IFrontEndService>();
             gameServiceRegistry.StartRegistration();
-            // gameServiceRegistry.RegisterService<IActionPanel, ActionPanel>(frontEndServices.ActionPanel);
+            gameServiceRegistry.RegisterService<ILightingService, LightingHandler>(frontEndServices.lightingHandler);
             gameServiceRegistry.FinishRegistration();
             Registry = gameServiceRegistry;
         }
@@ -24,5 +25,11 @@ namespace Game_Service
 
     public class FrontEndServices
     {
+        public FrontEndServices(LightingHandler lightingHandler)
+        {
+            this.lightingHandler = lightingHandler;
+        }
+
+        public LightingHandler lightingHandler { get; }
     }
 }

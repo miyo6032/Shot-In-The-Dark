@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 979143230633442213}
   - component: {fileID: 6028105391732856681}
   - component: {fileID: 4629252550362387582}
+  - component: {fileID: 2865159446327019924}
   m_Layer: 0
   m_Name: Bystander
   m_TagString: Bystander
@@ -72,6 +73,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2865159446327019924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126084402147566842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4867ae0c8a3a4ab6b7fe0f80bfb27114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8157008684030219431}
 --- !u!1 &5381297512035737719
 GameObject:
   m_ObjectHideFlags: 0
