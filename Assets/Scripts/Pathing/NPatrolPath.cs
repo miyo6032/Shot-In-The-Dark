@@ -25,6 +25,7 @@ namespace Pathing
 
         private void LerpToNextNode()
         {
+            IsMoving = false;
             node = GetNextNode();
             PatrolNode currentNode = path.nodes[node];
             PatrolNode nextNode = path.nodes[GetNextNode()];
@@ -34,8 +35,10 @@ namespace Pathing
 
         private void SetPosition(float progress)
         {
+            IsMoving = true;
             PatrolNode currentNode = path.nodes[node];
             PatrolNode nextNode = path.nodes[GetNextNode()];
+            Direction = nextNode.position - currentNode.position;
             Position = path.transform.TransformPoint(Vector2.Lerp(currentNode.position, nextNode.position, progress));
         }
 
@@ -50,6 +53,8 @@ namespace Pathing
         }
 
         public Vector2 Position { get; private set; }
+        public Vector2 Direction { get; private set; }
+        public bool IsMoving { get; private set; }
     }
 
     [Serializable]

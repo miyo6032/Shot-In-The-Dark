@@ -1,6 +1,7 @@
-﻿using Pathing;
+﻿using System;
+using Pathing;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Util;
 
 namespace Platformer.Mechanics
 {
@@ -11,6 +12,10 @@ namespace Platformer.Mechanics
     public class EnemyController : MonoBehaviour
     {
         public NPatrolPath path;
+
+        [SerializeField] private Animator animator;
+        [SerializeField] private Transform visual;
+        private static readonly int Speed = Animator.StringToHash("Speed");
         // public AudioClip ouch;
 
         private NMover mover;
@@ -21,8 +26,6 @@ namespace Platformer.Mechanics
 
         // public Bounds Bounds => _collider.bounds;
         
-        public float maxSpeed = 7;
-
         void Awake()
         {
             // control = GetComponent<AnimationController>();
@@ -42,10 +45,17 @@ namespace Platformer.Mechanics
             // }
         }
 
+        private void Update()
+        {
+            visual.rotation = MathUtils.Get2DRotationFromDirection(mover.Direction);
+            animator.SetFloat(Speed, mover.IsMoving ? 1 : 0);
+        }
+
         void FixedUpdate()
         {
             mover ??= new NMover(path);
-            transform.position = mover.Position;
+            var transform1 = transform;
+            transform1.position = mover.Position;
         }
     }
 }
