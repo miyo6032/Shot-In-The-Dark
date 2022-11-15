@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 696858015529837121}
   - component: {fileID: 8157008684030219431}
   - component: {fileID: 1626415752}
+  - component: {fileID: 340762903}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Bystander
@@ -160,7 +161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b574efd00269b843b10903db9cf8575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -191,3 +192,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &340762903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5381297512035737719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 43ad3074000000008b8362a1
+  m_ShapePath:
+  - {x: -0.13074207, y: -0.29200023, z: 0}
+  - {x: -0.14242738, y: 0.29200026, z: 0}
+  - {x: 0.14943865, y: 0.29200026, z: 0}
+  - {x: 0.16112402, y: -0.2873261, z: 0}
+  m_ShapePathHash: -271847247
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -55568
