@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactListener: {fileID: 2506141855850113122}
+  projectileLight: {fileID: 6079751392777396690, guid: 6fbcd7014b09f9c4c9cb900a542d3807, type: 3}
 --- !u!114 &2506141855850113122
 MonoBehaviour:
   m_ObjectHideFlags: 0

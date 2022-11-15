@@ -32,7 +32,9 @@ public class LightingHandler : MonoBehaviour, ILightingService
                     globalLight.intensity -= globalLightDimPerLevelLight;
                     foreach (var spriteRenderer in objectsToHide)
                     {
-                        spriteRenderer.color = new Color(1, 1, 1, spriteRenderer.color.a * spriteRendererDimPerLevelLight);
+                        var color = spriteRenderer.color;
+                        color = new Color(color.r, color.g, color.b, color.a * spriteRendererDimPerLevelLight);
+                        spriteRenderer.color = color;
                     }
                 });
             }
@@ -51,6 +53,19 @@ public class LightingHandler : MonoBehaviour, ILightingService
         if (gameState != GameState.Setup)
         {
             spriteRenderer.color = Color.clear;
+        }
+    }
+
+    public void ShowSpritesInRadius(Vector3 pos, float radius)
+    {
+        foreach (var spriteRenderer in objectsToHide)
+        {
+            if ((pos - spriteRenderer.transform.position).sqrMagnitude < radius)
+            {
+                var color = spriteRenderer.color;
+                color = new Color(color.r, color.g, color.b, 1.0f);
+                spriteRenderer.color = color;
+            } 
         }
     }
 }
