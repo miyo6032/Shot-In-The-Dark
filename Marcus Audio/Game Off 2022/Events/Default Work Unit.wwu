@@ -113,6 +113,78 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="EMP_Sound" ID="{0CE9C8BE-FEF2-4B40-97E3-41AB2E64261F}">
+					<ChildrenList>
+						<Action Name="" ID="{FA0B64D3-61A3-491C-AF64-76146C0A7395}" ShortID="545083306">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass Drop High Impact" ID="{45E960C8-F541-4961-80A1-4FC81E7972DB}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{60EC0C00-9DA5-4CC6-A8BD-40A17F825429}" ShortID="151106508">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass Drop High Impact 2" ID="{A0EB8443-13E2-4B3F-BCA9-38C82E3C80AF}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A94FB00F-062F-4E62-95C9-F7007D2F06D4}" ShortID="513655151">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass Drop Interference" ID="{4933B756-3DB4-4924-BF29-C9083C9AAA25}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5A3F670A-3D44-4085-85E8-3AE412B78480}" ShortID="121798531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bass Drop Firework" ID="{3AB45AF7-FB46-4AB5-B2EA-02EE713E5246}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Countdown" ID="{9C02388D-CFEF-4644-87BC-6F1847D3416A}">
+					<ChildrenList>
+						<Action Name="" ID="{4FE4DB3D-319B-4BED-B85C-20F24731051D}" ShortID="210459169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="One_Male" ID="{BE308AAE-2538-4A0B-A048-2889F7DD277B}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{82B5BBDB-C107-4500-8D9C-C171D1434009}" ShortID="334766337">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Two_Male" ID="{40219A2B-7AC2-4D8A-B5CA-46F42220B123}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{12285E85-A2C6-4066-BBAD-37D0E5B9A66A}" ShortID="112372927">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Three_Male" ID="{7A821BB6-54D7-44CD-A75E-8E2CB3C07C69}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
