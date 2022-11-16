@@ -24,16 +24,13 @@ namespace Player
         {
             if (obj.CompareTag("Target"))
             {
-                Debug.Log("Target Hit!");
-                Time.timeScale = 0.2f;
                 ShowTargets();
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.TargetHit;
             }
             else if (obj.CompareTag("Bystander"))
             {
-                Time.timeScale = 0.2f;
                 ShowTargets();
-                Debug.Log("Bystander Hit!");
+                GameServiceProvider.GetService<IGameState>().GameState = GameState.BystanderHit;
             }
             else if (obj.CompareTag("Obstacle"))
             {

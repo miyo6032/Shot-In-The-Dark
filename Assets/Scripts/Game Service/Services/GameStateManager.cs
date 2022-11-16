@@ -38,6 +38,8 @@ namespace Game_Service.Services
         Setup,
         EmpActivated,
         IsDark,
-        TargetHit
+        TargetHit,
+        BystanderHit,
+        OutOfTime
     }
 }

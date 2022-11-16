@@ -1,8 +1,8 @@
 ﻿using Game_Service;
 using Game_Service.Services;
-using Player;
 using Timer;
 using UnityEngine;
+using Util;
 
 namespace DefaultNamespace
 {
@@ -13,6 +13,7 @@ namespace DefaultNamespace
         
         private void Awake()
         {
+            Time.timeScale = 1.0f;
             GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer));
             FrontEndServiceProvider.RegisterServices(new FrontEndServices(lightingHandler));
             
@@ -22,9 +23,9 @@ namespace DefaultNamespace
         
         private static void OnTimerOut()
         {
-            if (GameServiceProvider.GetService<IGameState>().GameState == GameState.IsDark)
+            if (!GameServiceProvider.GetService<IGameState>().GameState.Contains(GameState.TargetHit, GameState.TargetHit, GameState.BystanderHit))
             {
-                Debug.Log("Timer ran out");
+                GameServiceProvider.GetService<IGameState>().GameState = GameState.OutOfTime;
             }
         }
 

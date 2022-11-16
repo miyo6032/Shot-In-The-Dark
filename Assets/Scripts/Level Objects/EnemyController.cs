@@ -47,6 +47,7 @@ namespace Platformer.Mechanics
 
         private void Update()
         {
+            mover ??= new NMover(path);
             visual.rotation = MathUtils.Get2DRotationFromDirection(mover.Direction);
             animator.SetFloat(Speed, mover.IsMoving ? 1 : 0);
         }
