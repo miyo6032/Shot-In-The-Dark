@@ -20,6 +20,15 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
+        GameServiceProvider.GetService<IGameState>().AddGameStateChangeListener(StopMovement);
+    }
+
+    private void StopMovement(GameState obj)
+    {
+        if (obj == GameState.EmpActivated)
+        {
+            animator.SetFloat(Speed, 0);
+        }
     }
 
     void FixedUpdate()
