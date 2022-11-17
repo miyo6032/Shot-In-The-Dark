@@ -1,0 +1,21 @@
+{
+    "name": "ScriptsAssembly",
+    "rootNamespace": "",
+    "references": [
+        "Unity.TextMeshPro",
+        "AK.Wwise.Unity.API.WwiseTypes",
+        "Unity.RenderPipelines.Universal.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Leantween",
+        "AK.Wwise.Unity.API"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
