@@ -9,6 +9,8 @@
 				<WorkUnit Name="Menu_UI_Sounds" ID="{FE68D8E9-2C58-442A-92A2-D5BFFB3AEEA7}" PersistMode="Reference"/>
 				<WorkUnit Name="Tranquillizer" ID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}" PersistMode="Reference"/>
 				<WorkUnit Name="Target" ID="{A2AFF126-4516-46DB-B8B4-34DAB421387D}" PersistMode="Reference"/>
+				<WorkUnit Name="EMP" ID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}" PersistMode="Reference"/>
+				<WorkUnit Name="Communications" ID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

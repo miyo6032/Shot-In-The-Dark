@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}" SchemaVersion="103" RootDocumentID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" ParentDocumentID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}">
+	<AudioObjects>
+		<WorkUnit Name="Communications" ID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}" OwnerID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="One_Male" ID="{BE308AAE-2538-4A0B-A048-2889F7DD277B}" ShortID="943275403">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-23</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}">
+								<Effect Name="Single_Band_1Khz_Wide (Custom)" ID="{DB399F7E-F8BE-4771-AEB1-4313AF59AB6B}" ShortID="890950600" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand3" Type="bool" Value="False"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+							<ObjectRef Name="Rock_Amp_01" ID="{ACC66856-7FB0-4BC5-8400-8DC09D33AE0A}" WorkUnitID="{1B1E3084-90B6-454A-A835-5C34918D0400}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="One_Male" ID="{29C06D67-3645-4C71-95B0-6C70B17D581F}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0220318914286952"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0212004992993104"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.043648086792698"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.51754160054199"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>One_Male.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="612041764"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="One_Male" ID="{29C06D67-3645-4C71-95B0-6C70B17D581F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Three_Male" ID="{7A821BB6-54D7-44CD-A75E-8E2CB3C07C69}" ShortID="851535743">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-22</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}">
+								<Effect Name="Single_Band_1Khz_Wide (Custom)" ID="{46B02395-45CC-4244-A5B8-1BC2AD5F61B7}" ShortID="939506193" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand3" Type="bool" Value="False"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+							<ObjectRef Name="Rock_Amp_01" ID="{ACC66856-7FB0-4BC5-8400-8DC09D33AE0A}" WorkUnitID="{1B1E3084-90B6-454A-A835-5C34918D0400}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Three_Male" ID="{BA0FE4CF-E26E-4BF0-9E14-C1E7679CD732}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.03390307282531"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.06538449759167"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.91794526268898"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.35868520941801"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Three_Male.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="112896623"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Three_Male" ID="{BA0FE4CF-E26E-4BF0-9E14-C1E7679CD732}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Two_Male" ID="{40219A2B-7AC2-4D8A-B5CA-46F42220B123}" ShortID="390996495">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}">
+								<Effect Name="Single_Band_1Khz_Wide (Custom)" ID="{A389CAC1-E938-4D24-A32A-3BC5A01FBB89}" ShortID="36206572" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="1000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="OnOffBand3" Type="bool" Value="False"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1" PluginName="iZotope Trash Distortion" CompanyID="259" PluginID="3" PluginType="3">
+							<ObjectRef Name="Rock_Amp_01" ID="{ACC66856-7FB0-4BC5-8400-8DC09D33AE0A}" WorkUnitID="{1B1E3084-90B6-454A-A835-5C34918D0400}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Two_Male" ID="{7FC66D1C-CD1E-48C7-8C6A-B4EBC55F728B}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0411680170021624"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0774927378864234"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.07763338623307"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.5086867407263"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Two_Male.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="905854995"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Two_Male" ID="{7FC66D1C-CD1E-48C7-8C6A-B4EBC55F728B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
