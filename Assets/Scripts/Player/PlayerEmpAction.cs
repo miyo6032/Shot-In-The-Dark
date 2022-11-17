@@ -21,7 +21,7 @@ namespace Player
 
         private void DoEmp(IGameState gameStateService)
         {
-            // empSoundEvent.Post(gameObject);
+            empSoundEvent.Post(gameObject);
             if (gameStateService.GameState == GameState.Setup)
             {
                 gameStateService.GameState = GameState.EmpActivated;

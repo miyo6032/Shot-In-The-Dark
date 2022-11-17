@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\WWise\Game Off 2022\</ProjectRoot>
-		<SourceFilesRoot>D:\WWise\Game Off 2022\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\WWise\Game Off 2022\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\WWise\Game Off 2022\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1716381387">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3005477978">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3418443248">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3714975495" Name="Crowd_Noise" ObjectPath="\Events\Default Work Unit\Crowd_Noise">
+				<Event Id="3714975495" Name="Crowd_Noise" ObjectPath="\Events\Default Work Unit\Crowd_Noise" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="87964442" Language="SFX">
 							<ShortName>Crowd Footsteps.wav</ShortName>
@@ -41,7 +41,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1171885424" Name="Hit_Target" ObjectPath="\Events\Default Work Unit\Hit_Target">
+				<Event Id="521623505" Name="EMP_Sound" ObjectPath="\Events\Default Work Unit\EMP_Sound" DurationType="OneShot" DurationMin="3.759845" DurationMax="3.759845">
+					<IncludedMemoryFiles>
+						<File Id="150677986" Language="SFX">
+							<ShortName>Bass Drop High Impact 2.wav</ShortName>
+							<Path>SFX\Bass Drop High Impact 2_328F8836.wem</Path>
+						</File>
+						<File Id="262945368" Language="SFX">
+							<ShortName>Bass Drop Interference.wav</ShortName>
+							<Path>SFX\Bass Drop Interference_2B848FEC.wem</Path>
+						</File>
+						<File Id="781127359" Language="SFX">
+							<ShortName>Bass Drop Firework.wav</ShortName>
+							<Path>SFX\Bass Drop Firework_B4DA7B2E.wem</Path>
+						</File>
+						<File Id="956697300" Language="SFX">
+							<ShortName>Bass Drop High Impact.wav</ShortName>
+							<Path>SFX\Bass Drop High Impact_D01E1F20.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1171885424" Name="Hit_Target" ObjectPath="\Events\Default Work Unit\Hit_Target" DurationType="OneShot" DurationMin="0.379792" DurationMax="0.379792">
 					<IncludedMemoryFiles>
 						<File Id="186127181" Language="SFX">
 							<ShortName>Industry Lid Plastic Tube Lid Opening 01.wav</ShortName>
@@ -53,7 +73,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1952436935" Name="Menu_Enter" ObjectPath="\Events\Default Work Unit\Menu_Enter">
+				<Event Id="1952436935" Name="Menu_Enter" ObjectPath="\Events\Default Work Unit\Menu_Enter" DurationType="OneShot" DurationMin="0.110604" DurationMax="0.110604">
 					<IncludedMemoryFiles>
 						<File Id="478377020" Language="SFX">
 							<ShortName>Menu_Enter.wav</ShortName>
@@ -61,7 +81,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2710292464" Name="Menu_Movement" ObjectPath="\Events\Default Work Unit\Menu_Movement">
+				<Event Id="2710292464" Name="Menu_Movement" ObjectPath="\Events\Default Work Unit\Menu_Movement" DurationType="OneShot" DurationMin="0.139353" DurationMax="0.139353">
 					<IncludedMemoryFiles>
 						<File Id="29000921" Language="SFX">
 							<ShortName>Menu_Movement.wav</ShortName>
@@ -69,7 +89,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start">
+				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start" DurationType="OneShot" DurationMin="15.428562" DurationMax="15.428562">
 					<IncludedMemoryFiles>
 						<File Id="8914327" Language="SFX">
 							<ShortName>Before_Diamond_Bass_Loop.wav</ShortName>
@@ -77,7 +97,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3554186090" Name="Play_Movement_Footstep" ObjectPath="\Events\Default Work Unit\Play_Movement_Footstep">
+				<Event Id="3554186090" Name="Play_Movement_Footstep" ObjectPath="\Events\Default Work Unit\Play_Movement_Footstep" DurationType="OneShot" DurationMin="0.257136" DurationMax="0.524821">
 					<IncludedMemoryFiles>
 						<File Id="718007540" Language="SFX">
 							<ShortName>Step 1.wav</ShortName>
@@ -93,7 +113,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="871813740" Name="Player_Hit" ObjectPath="\Events\Default Work Unit\Player_Hit">
+				<Event Id="871813740" Name="Player_Hit" ObjectPath="\Events\Default Work Unit\Player_Hit" DurationType="OneShot" DurationMin="0.671353" DurationMax="0.671353">
 					<IncludedMemoryFiles>
 						<File Id="308699503" Language="SFX">
 							<ShortName>Uhh soft 1.wav</ShortName>
@@ -105,7 +125,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4004702906" Name="Player_Shoot" ObjectPath="\Events\Default Work Unit\Player_Shoot">
+				<Event Id="4004702906" Name="Player_Shoot" ObjectPath="\Events\Default Work Unit\Player_Shoot" DurationType="OneShot" DurationMin="0.42386" DurationMax="0.42386">
 					<IncludedMemoryFiles>
 						<File Id="1046075124" Language="SFX">
 							<ShortName>560011__combatsfx4you__gun-silencer.wav</ShortName>
