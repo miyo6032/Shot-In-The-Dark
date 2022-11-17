@@ -4,6 +4,7 @@ using Game_Service.Front_End_Services;
 using Game_Service.Services;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Event = AK.Wwise.Event;
 
 namespace Player
 {
@@ -11,6 +12,8 @@ namespace Player
     {
         [SerializeField] private ImpactListener impactListener;
         [SerializeField] private Light2D projectileLight;
+        [SerializeField] private Event targetHitEvent;
+        [SerializeField] private Event bystanderHitEvent;
         
         private Vector2 direction;
 
@@ -25,11 +28,13 @@ namespace Player
             if (obj.CompareTag("Target"))
             {
                 ShowTargets();
+                targetHitEvent.Post(gameObject);
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.TargetHit;
             }
             else if (obj.CompareTag("Bystander"))
             {
                 ShowTargets();
+                bystanderHitEvent.Post(gameObject);
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.BystanderHit;
             }
             else if (obj.CompareTag("Obstacle"))

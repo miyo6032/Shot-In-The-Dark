@@ -134,6 +134,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactListener: {fileID: 2506141855850113122}
   projectileLight: {fileID: 6079751392777396690, guid: 6fbcd7014b09f9c4c9cb900a542d3807, type: 3}
+  targetHitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4768977ba0a3d114bbdcd1365efdba39, type: 2}
+  bystanderHitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1adb3cdf64df6774da97ae267627ea60, type: 2}
 --- !u!114 &2506141855850113122
 MonoBehaviour:
   m_ObjectHideFlags: 0
