@@ -6,6 +6,7 @@ using Util;
 public class SightRenderer : MonoBehaviour
 {
     [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private float length;
     private bool rendererEnabled;
 
     public void Start()
@@ -30,7 +31,7 @@ public class SightRenderer : MonoBehaviour
         lineRenderer.SetPosition(0, position);
 
         Vector2 shootDirection = MathUtils.CalculateShootDirection2D(Input.mousePosition, position);
-        lineRenderer.SetPosition(1, position + (Vector3)(shootDirection * (25)));
+        lineRenderer.SetPosition(1, position + (Vector3)(shootDirection * 5));
     }
 
 
