@@ -2,15 +2,17 @@
 using Game_Service;
 using Game_Service.Front_End_Services;
 using Game_Service.Services;
+using Lighting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.U2D;
 
 public class LightingHandler : MonoBehaviour, ILightingService
 {
-    [SerializeField] List<Light2D> levelLights;
+    [SerializeField] List<LevelLight> levelLights;
     [SerializeField] Light2D globalLight;
     [SerializeField] private float targetGlobalLightIntensity;
-    [SerializeField] private List<SpriteRenderer> objectsToHide; 
+    [SerializeField] private List<SpriteRenderer> objectsToHide;
 
     private void Start()
     {
@@ -28,7 +30,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
             {
                 LeanTween.delayedCall(gameObject, Random.Range(0.0f, fadeTime), () =>
                 {
-                    levelLight.gameObject.SetActive(false);
+                    levelLight.TurnOff();
                     globalLight.intensity -= globalLightDimPerLevelLight;
                     foreach (var spriteRenderer in objectsToHide)
                     {
