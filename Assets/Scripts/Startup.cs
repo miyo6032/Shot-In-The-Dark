@@ -14,7 +14,7 @@ namespace DefaultNamespace
         private void Awake()
         {
             Time.timeScale = 1.0f;
-            GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer));
+            GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer, new GamePauseService()));
             FrontEndServiceProvider.RegisterServices(new FrontEndServices(lightingHandler));
             
             GameServiceProvider.GetService<IGameTimer>().SetTimer(30, OnTimerOut, f => $"{f:0} seconds to make shot");

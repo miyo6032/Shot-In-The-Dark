@@ -15,6 +15,7 @@ namespace Game_Service
             gameServiceRegistry.StartRegistration();
             gameServiceRegistry.RegisterService<IGameState, GameStateManager>(backendServices.GameStateManager);
             gameServiceRegistry.RegisterService<IGameTimer, CountdownTimer>(backendServices.CountdownTimer);
+            gameServiceRegistry.RegisterService<IGamePauseService, GamePauseService>(backendServices.GamePauseService);
             gameServiceRegistry.FinishRegistration();
             Registry = gameServiceRegistry;
         }
@@ -27,13 +28,15 @@ namespace Game_Service
 
     public class BackendServices
     {
-        public BackendServices(GameStateManager gameStateManager, CountdownTimer countdownTimer)
+        public BackendServices(GameStateManager gameStateManager, CountdownTimer countdownTimer, GamePauseService gamePauseService)
         {
             GameStateManager = gameStateManager;
             CountdownTimer = countdownTimer;
+            GamePauseService = gamePauseService;
         }
 
         public GameStateManager GameStateManager { get; }
         public CountdownTimer CountdownTimer { get; }
+        public GamePauseService GamePauseService { get; }
     }
 }
