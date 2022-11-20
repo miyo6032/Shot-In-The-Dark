@@ -30,7 +30,7 @@ namespace Pathing
             PatrolNode currentNode = path.nodes[node];
             PatrolNode nextNode = path.nodes[GetNextNode()];
             float time = (currentNode.position - nextNode.position).magnitude / path.paceSpeed;
-            LeanTween.value(path.gameObject, SetPosition, 0f, 1f, time).setDelay(path.nodes[node].pause).setOnComplete(LerpToNextNode);
+            LeanTween.delayedCall(path.gameObject, path.nodes[node].pause, () => LeanTween.value(path.gameObject, SetPosition, 0f, 1f, time).setOnComplete(LerpToNextNode));
         }
 
         private void SetPosition(float progress)
