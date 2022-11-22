@@ -9,7 +9,9 @@ namespace Player
     {
         [SerializeField] private PlayerInput playerInput;
         [SerializeField] private Event empSoundEvent;
-        
+        [SerializeField] private Animator animator;
+        private static readonly int Emp = Animator.StringToHash("Emp");
+
         private void Update()
         {
             var gameStateService = GameServiceProvider.GetService<IGameState>();
@@ -22,6 +24,7 @@ namespace Player
         private void DoEmp(IGameState gameStateService)
         {
             empSoundEvent.Post(gameObject);
+            animator.SetTrigger(Emp);
             if (gameStateService.GameState == GameState.Setup)
             {
                 gameStateService.GameState = GameState.EmpActivated;

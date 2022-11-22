@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b74f68597a90274ba1b671cb03277db
+guid: 7ac1415a890f16e4f951cadeb4166a9c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EMPWave_0
+      name: Empwave_Emission_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 446892470c4814f4c8fb9230977a2650
-      internalID: 132171505
+      spriteID: 1938c3b70e73714479a29c2260cee385
+      internalID: 1965770160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_1
+      name: Empwave_Emission_1
       rect:
         serializedVersion: 2
         x: 72
@@ -146,20 +146,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71e5e21737112274584370e924f7d466
-      internalID: 1531581595
+      spriteID: 6f1e1ef2471cdf348b6b6b27a16cacf9
+      internalID: 240814056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_2
+      name: Empwave_Emission_2
       rect:
         serializedVersion: 2
         x: 144
@@ -167,20 +167,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee768cf3b2bab2744a18e80e9270dd84
-      internalID: -905629264
+      spriteID: ef49e8680101998478dd2751681d1daf
+      internalID: 344678563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_3
+      name: Empwave_Emission_3
       rect:
         serializedVersion: 2
         x: 216
@@ -188,20 +188,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74e45ffb24a524e469d9d61a8e8b0b57
-      internalID: 2142704671
+      spriteID: 9092fe08d7c6e0b4ebf7cfd5fa3e06c0
+      internalID: 326448113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_4
+      name: Empwave_Emission_4
       rect:
         serializedVersion: 2
         x: 288
@@ -209,20 +209,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a54a7821e94fc841b0480e59b861095
-      internalID: 1480905711
+      spriteID: 94466e51c2ea77c4a83dc8e250b3cb86
+      internalID: 1159852934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_5
+      name: Empwave_Emission_5
       rect:
         serializedVersion: 2
         x: 360
@@ -230,20 +230,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ee8b9ce0edff6046808f0fcc5fd4a2e
-      internalID: -1215209449
+      spriteID: 469b3dca913498b4fb9e9561851ecfcb
+      internalID: 229094342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_6
+      name: Empwave_Emission_6
       rect:
         serializedVersion: 2
         x: 432
@@ -251,20 +251,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57fc8938f5f6f934a8280ac27427c80a
-      internalID: -630802581
+      spriteID: 9d6167a0777f9524ca8621016affb9ec
+      internalID: 1289082632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_7
+      name: Empwave_Emission_7
       rect:
         serializedVersion: 2
         x: 504
@@ -272,20 +272,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2e21160065e33499b0176abc027e7e
-      internalID: -768982884
+      spriteID: 76ff47f151cbc1a40b94e8c53b0a6ae2
+      internalID: -1550131043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_8
+      name: Empwave_Emission_8
       rect:
         serializedVersion: 2
         x: 576
@@ -293,20 +293,20 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 489c8c256b90e93489326a7e2c08e967
-      internalID: -2145226408
+      spriteID: dd857a00f2356e34d893c0d8561fd818
+      internalID: -1316002798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPWave_9
+      name: Empwave_Emission_9
       rect:
         serializedVersion: 2
         x: 648
@@ -314,14 +314,14 @@ TextureImporter:
         width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99da08aaa425af843aad1a04681a2bee
-      internalID: -1369392666
+      spriteID: b9edb91cc35f915489960b0b0bb9833d
+      internalID: 1311219363
       vertices: []
       indices: 
       edges: []
@@ -335,20 +335,18 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 7ac1415a890f16e4f951cadeb4166a9c, type: 3}
-      name: _Emission
+    secondaryTextures: []
     nameFileIdTable:
-      EMPWave_3: 2142704671
-      EMPWave_4: 1480905711
-      EMPWave_5: -1215209449
-      EMPWave_9: -1369392666
-      EMPWave_2: -905629264
-      EMPWave_8: -2145226408
-      EMPWave_0: 132171505
-      EMPWave_1: 1531581595
-      EMPWave_7: -768982884
-      EMPWave_6: -630802581
+      Empwave_Emission_3: 326448113
+      Empwave_Emission_4: 1159852934
+      Empwave_Emission_9: 1311219363
+      Empwave_Emission_6: 1289082632
+      Empwave_Emission_0: 1965770160
+      Empwave_Emission_7: -1550131043
+      Empwave_Emission_2: 344678563
+      Empwave_Emission_5: 229094342
+      Empwave_Emission_1: 240814056
+      Empwave_Emission_8: -1316002798
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
