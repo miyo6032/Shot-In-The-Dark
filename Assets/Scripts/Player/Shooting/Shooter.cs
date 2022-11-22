@@ -11,12 +11,15 @@ namespace Player.Shooting
         [SerializeField] float cooldown;
         [SerializeField] private Projectile projectilePrefab;
         [SerializeField] private float projectileSpeed;
+        [SerializeField] private Transform visual;
+        [SerializeField] private Animator animator;
 
         [SerializeField] private Event shootSoundEvent;
         // [SerializeField] private Transform cannonPivot;
         // [SerializeField] private AudioClip shootAudio;
         // [SerializeField] private AudioSource audioSource;
         private float currentCooldown;
+        private static readonly int Shooting = Animator.StringToHash("Shooting");
 
         public void Update()
         {
@@ -25,6 +28,7 @@ namespace Player.Shooting
             currentCooldown = Mathf.Max(currentCooldown - Time.deltaTime, 0);
             Vector2 direction2D = MathUtils.CalculateShootDirection2D(Input.mousePosition, transform.position);
             var rotationFromDirection = MathUtils.Get2DRotationFromDirection(direction2D);
+            visual.rotation = rotationFromDirection;
 
             // cannonPivot.rotation = rotationFromDirection;
 
@@ -37,6 +41,7 @@ namespace Player.Shooting
                 projectile.Init(direction2D * projectileSpeed);
                 currentCooldown = cooldown;
                 shootSoundEvent.Post(gameObject);
+                animator.SetTrigger(Shooting);
             }
         }
     }

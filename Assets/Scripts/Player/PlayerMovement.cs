@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     private static readonly int Speed = Animator.StringToHash("Speed");
     private bool soundPlaying;
+    private static readonly int Aiming = Animator.StringToHash("Aiming");
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (obj == GameState.EmpActivated)
         {
             animator.SetFloat(Speed, 0);
+            animator.SetBool(Aiming, true);
         }
     }
 
