@@ -4,6 +4,7 @@ using Game_Service.Services;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Util;
 
 namespace Game_User_Interface
 {
@@ -13,6 +14,7 @@ namespace Game_User_Interface
         [SerializeField] private Button restartButton;
         [SerializeField] private Button quitButton;
         [SerializeField] private RectTransform pauseMenu;
+        [SerializeField] private SceneIndexProvider menuScene;
 
         private void Start()
         {
@@ -35,10 +37,7 @@ namespace Game_User_Interface
 
         private void Quit()
         {
-            #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-            #endif
-            Application.Quit();
+            SceneManager.LoadScene(menuScene.Index);
         }
     }
 }
