@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33ec7108765f5934dab1c47757b09ef9
+guid: e234c78214c84554eafb2da85e728ff3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EMPShock_0
+      name: EMPShock_Emission_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d3c60ff674b9ff45b344cf12b3431aa
-      internalID: 1229970286
+      spriteID: 5c566bcc40787fb43a5dc80c7ed382cf
+      internalID: -1820844643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_1
+      name: EMPShock_Emission_1
       rect:
         serializedVersion: 2
         x: 32
@@ -146,20 +146,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6863c9026d8f2042bb72d8d4efd28ee
-      internalID: 911233303
+      spriteID: 836e409b24d947741b9ab60c4234b3a3
+      internalID: 1163929763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_2
+      name: EMPShock_Emission_2
       rect:
         serializedVersion: 2
         x: 64
@@ -167,20 +167,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a00e09d7fcce284cbc6d69a4d5909eb
-      internalID: -651800460
+      spriteID: bee1711a40b786e4eaa4fe8e69feaf36
+      internalID: -149513381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_3
+      name: EMPShock_Emission_3
       rect:
         serializedVersion: 2
         x: 96
@@ -188,20 +188,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86b03d6f89bcfcb439e7d05042626931
-      internalID: 1484050819
+      spriteID: 401199ac881b2244196cb7b1459bea45
+      internalID: -460619091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_4
+      name: EMPShock_Emission_4
       rect:
         serializedVersion: 2
         x: 128
@@ -209,20 +209,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 405917aad76bec94fa0965110ad28443
-      internalID: -1047066254
+      spriteID: 9b0152458be9c7c47a1f10709179d432
+      internalID: 891413791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_5
+      name: EMPShock_Emission_5
       rect:
         serializedVersion: 2
         x: 160
@@ -230,20 +230,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa7f4bc2d461e5d478727965ccd6c8ac
-      internalID: 76687640
+      spriteID: 1cfac98936ae4724fabbf4aea619ca92
+      internalID: 1393849167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_6
+      name: EMPShock_Emission_6
       rect:
         serializedVersion: 2
         x: 192
@@ -251,20 +251,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed28e1aacd2e9b54cbfc00328b81a706
-      internalID: 1094713134
+      spriteID: e0dfb33fce0d93741a6f8c9507624398
+      internalID: 893504615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_7
+      name: EMPShock_Emission_7
       rect:
         serializedVersion: 2
         x: 224
@@ -272,20 +272,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85cb6abe0fede7c4dadc692105cbce90
-      internalID: 1117539409
+      spriteID: ff340b70edd988944b762167de6b77c1
+      internalID: -962197836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMPShock_8
+      name: EMPShock_Emission_8
       rect:
         serializedVersion: 2
         x: 256
@@ -293,14 +293,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd6312fe354375842a56b52610a9fd42
-      internalID: -1063248831
+      spriteID: f3e81e310059a73468ae2d90015b1989
+      internalID: 1073163853
       vertices: []
       indices: 
       edges: []
@@ -314,19 +314,17 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: e234c78214c84554eafb2da85e728ff3, type: 3}
-      name: _Emission
+    secondaryTextures: []
     nameFileIdTable:
-      EMPShock_2: -651800460
-      EMPShock_3: 1484050819
-      EMPShock_7: 1117539409
-      EMPShock_8: -1063248831
-      EMPShock_6: 1094713134
-      EMPShock_1: 911233303
-      EMPShock_4: -1047066254
-      EMPShock_5: 76687640
-      EMPShock_0: 1229970286
+      EMPShock_Emission_1: 1163929763
+      EMPShock_Emission_0: -1820844643
+      EMPShock_Emission_4: 891413791
+      EMPShock_Emission_6: 893504615
+      EMPShock_Emission_5: 1393849167
+      EMPShock_Emission_3: -460619091
+      EMPShock_Emission_7: -962197836
+      EMPShock_Emission_2: -149513381
+      EMPShock_Emission_8: 1073163853
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
