@@ -23,10 +23,10 @@ namespace Player
 
         private void DoEmp(IGameState gameStateService)
         {
-            empSoundEvent.Post(gameObject);
-            animator.SetTrigger(Emp);
             if (gameStateService.GameState == GameState.Setup)
             {
+                empSoundEvent.Post(gameObject);
+                animator.SetTrigger(Emp);
                 gameStateService.GameState = GameState.EmpActivated;
             }
         }

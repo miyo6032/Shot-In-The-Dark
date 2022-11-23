@@ -1,6 +1,7 @@
 using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Util;
 using Event = AK.Wwise.Event;
 
@@ -23,6 +24,7 @@ namespace Player.Shooting
 
         public void Update()
         {
+            if (GameServiceProvider.GetService<IGamePauseService>().IsGamePaused) return;
             if (GameServiceProvider.GetService<IGameState>().GameState != GameState.IsDark) return;
             
             currentCooldown = Mathf.Max(currentCooldown - Time.deltaTime, 0);
@@ -32,17 +34,23 @@ namespace Player.Shooting
 
             // cannonPivot.rotation = rotationFromDirection;
 
-            if (currentCooldown == 0 && Input.GetMouseButton(0))
+            var isOverGUI = EventSystem.current.IsPointerOverGameObject();
+            if (currentCooldown == 0 && Input.GetButton("Fire1") && !isOverGUI)
             {
-                // audioSource.PlayOneShot(shootAudio);
-                Projectile projectile = Instantiate(projectilePrefab, transform.position, rotationFromDirection);
-                // audioSource.PlayOneShot(shootAudio);
-                // bullet.Init(gameTimer, direction2D * bulletSpeed, 0, BulletStructure, bulletPrefab, audioSource);
-                projectile.Init(direction2D * projectileSpeed);
-                currentCooldown = cooldown;
-                shootSoundEvent.Post(gameObject);
-                animator.SetTrigger(Shooting);
+                Shoot(rotationFromDirection, direction2D);
             }
+        }
+
+        private void Shoot(Quaternion rotationFromDirection, Vector2 direction2D)
+        {
+            // audioSource.PlayOneShot(shootAudio);
+            Projectile projectile = Instantiate(projectilePrefab, transform.position, rotationFromDirection);
+            // audioSource.PlayOneShot(shootAudio);
+            // bullet.Init(gameTimer, direction2D * bulletSpeed, 0, BulletStructure, bulletPrefab, audioSource);
+            projectile.Init(direction2D * projectileSpeed);
+            currentCooldown = cooldown;
+            shootSoundEvent.Post(gameObject);
+            animator.SetTrigger(Shooting);
         }
     }
 }

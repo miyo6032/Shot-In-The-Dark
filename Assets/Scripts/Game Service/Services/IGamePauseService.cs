@@ -6,6 +6,7 @@ namespace Game_Service.Services
     {
         public void PauseGame();
         public void UnpauseGame();
+    public bool IsGamePaused { get; }
     }
 
     public class GamePauseService : IGamePauseService
@@ -19,5 +20,7 @@ namespace Game_Service.Services
         {
             Time.timeScale = 1;
         }
+
+        public bool IsGamePaused => Time.timeScale <= 0;
     }
 }
