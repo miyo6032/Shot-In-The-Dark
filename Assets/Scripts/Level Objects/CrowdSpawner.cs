@@ -10,6 +10,7 @@ namespace Level_Objects
         [SerializeField] private float timeBetweenCrowds;
         [SerializeField] private float initialTime;
         [SerializeField] private int amountOfBystandersPerCrowd;
+        [SerializeField] private float timeBetweenIndividuals;
 
         private float timeUntilNextCrowd;
 
@@ -31,12 +32,12 @@ namespace Level_Objects
 
         private IEnumerator SpawnCrowd()
         {
-            float timeBetweenBystandersInCrowd = 0.03f / direction.magnitude;
             for (int i = 0; i < amountOfBystandersPerCrowd; i++)
             {
                 TranslateObject translateObject = Instantiate(bystanderPrefab, transform);
+                translateObject.transform.position += Vector3.up * (0.048f * Random.Range(-1, 1));
                 translateObject.Init(direction);
-                yield return new WaitForSeconds(timeBetweenBystandersInCrowd);
+                yield return new WaitForSeconds(timeBetweenIndividuals);
             }
         }
     }
