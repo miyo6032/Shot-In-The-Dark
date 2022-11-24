@@ -34,9 +34,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
                     globalLight.intensity -= globalLightDimPerLevelLight;
                     foreach (var spriteRenderer in objectsToHide)
                     {
-                        var color = spriteRenderer.color;
-                        color = new Color(color.r, color.g, color.b, color.a * spriteRendererDimPerLevelLight);
-                        spriteRenderer.color = color;
+                        SetReducedAlpha(spriteRenderer, spriteRendererDimPerLevelLight);
                     }
                 });
             }
@@ -48,13 +46,20 @@ public class LightingHandler : MonoBehaviour, ILightingService
         }
     }
 
+    private static void SetReducedAlpha(SpriteRenderer spriteRenderer, float spriteRendererDimPerLevelLight)
+    {
+        var color = spriteRenderer.color;
+        color = new Color(color.r, color.g, color.b, color.a * spriteRendererDimPerLevelLight);
+        spriteRenderer.color = color;
+    }
+
     public void RegisterSpriteToHide(SpriteRenderer spriteRenderer)
     {
         objectsToHide.Add(spriteRenderer);
         var gameState = GameServiceProvider.GetService<IGameState>().GameState;
         if (gameState != GameState.Setup)
         {
-            spriteRenderer.color = Color.clear;
+            SetReducedAlpha(spriteRenderer, 0);
         }
     }
 
