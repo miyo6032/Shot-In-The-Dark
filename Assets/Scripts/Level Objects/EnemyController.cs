@@ -1,4 +1,6 @@
 ﻿using System;
+using Game_Service;
+using Game_Service.Services;
 using Pathing;
 using UnityEngine;
 using Util;
@@ -47,6 +49,7 @@ namespace Platformer.Mechanics
 
         private void Update()
         {
+            if (GameServiceProvider.GetService<IGameState>().GameState.Contains(GameState.TargetHit, GameState.BystanderHit)) return;
             mover ??= new NMover(path);
             visual.rotation = MathUtils.Get2DRotationFromDirection(mover.Direction);
             animator.SetFloat(Speed, mover.IsMoving ? 1 : 0);
@@ -54,6 +57,7 @@ namespace Platformer.Mechanics
 
         void FixedUpdate()
         {
+            if (GameServiceProvider.GetService<IGameState>().GameState.Contains(GameState.TargetHit, GameState.BystanderHit)) return;
             mover ??= new NMover(path);
             var transform1 = transform;
             transform1.position = mover.Position;

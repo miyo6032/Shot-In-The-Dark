@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4629252550362387582}
   - component: {fileID: 2865159446327019924}
   - component: {fileID: 6986069196829251463}
+  - component: {fileID: 1267832573098221649}
   m_Layer: 0
   m_Name: Bystander Advanced Movement
   m_TagString: Bystander
@@ -74,6 +75,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8157008684030219431}
+  animator: {fileID: 1626415752}
+  impactListener: {fileID: 1267832573098221649}
 --- !u!114 &6986069196829251463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +92,18 @@ MonoBehaviour:
   path: {fileID: 0}
   animator: {fileID: 1626415752}
   visual: {fileID: 696858015529837121}
+--- !u!114 &1267832573098221649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126084402147566842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4d18a01291440c99eadcfbd14ab68b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5381297512035737719
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,4 +236,4 @@ MonoBehaviour:
   - {x: 0.16112402, y: -0.2873261, z: 0}
   m_ShapePathHash: -271847247
   m_Mesh: {fileID: 0}
-  m_InstanceId: 40134
+  m_InstanceId: 143982
