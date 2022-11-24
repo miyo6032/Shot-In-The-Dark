@@ -8,8 +8,8 @@ namespace Game_User_Interface
 {
     public class PlayButton : MonoBehaviour
     {
-        [SerializeField] private SceneIndexProvider firstLevelScene;
         [SerializeField] private Button button;
+        [SerializeField] private RectTransform levelSelectionCanvas;
 
         private void Start()
         {
@@ -18,10 +18,7 @@ namespace Game_User_Interface
 
         private void LoadFirstLevel()
         {
-            LeanTween.delayedCall(gameObject, 0.2f, () =>
-            {
-                SceneManager.LoadScene(firstLevelScene.Index);
-            });
+            levelSelectionCanvas.gameObject.SetActive(true);
         }
     }
 }
