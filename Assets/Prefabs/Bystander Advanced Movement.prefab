@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8157008684030219431}
   shirtRenderer: {fileID: 76166083007944510}
+  pantsRenderer: {fileID: 5178542851794678597}
   animator: {fileID: 1626415752}
   impactListener: {fileID: 1267832573098221649}
 --- !u!114 &6986069196829251463
@@ -323,7 +324,7 @@ MonoBehaviour:
   - {x: 0.16112402, y: -0.2873261, z: 0}
   m_ShapePathHash: -271847247
   m_Mesh: {fileID: 0}
-  m_InstanceId: 62204
+  m_InstanceId: 70308
 --- !u!1 &6388423556627231524
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ namespace Level_Objects
     {
         [SerializeField] SpriteRenderer spriteRenderer;
         [SerializeField] SpriteRenderer shirtRenderer;
+        [SerializeField] SpriteRenderer pantsRenderer;
         [SerializeField] private Animator animator;
         [SerializeField] private ImpactListener impactListener;
         private static readonly int Hit = Animator.StringToHash("Hit");
@@ -32,12 +33,14 @@ namespace Level_Objects
         {
             LightingHandler.SetReducedAlpha(spriteRenderer, alpha);
             LightingHandler.SetReducedAlpha(shirtRenderer, alpha);
+            LightingHandler.SetReducedAlpha(pantsRenderer, alpha);
         }
 
         public override void Show()
         {
             LightingHandler.RestoreAlpha(spriteRenderer);
             LightingHandler.RestoreAlpha(shirtRenderer);
+            LightingHandler.RestoreAlpha(pantsRenderer);
         }
     }
 }
