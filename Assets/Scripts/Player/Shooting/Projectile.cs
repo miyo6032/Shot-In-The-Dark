@@ -4,6 +4,7 @@ using Game_Service.Front_End_Services;
 using Game_Service.Services;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using Util;
 using Event = AK.Wwise.Event;
 
 namespace Player
@@ -14,12 +15,14 @@ namespace Player
         [SerializeField] private Light2D projectileLight;
         [SerializeField] private Event targetHitEvent;
         [SerializeField] private Event bystanderHitEvent;
+        [SerializeField] private Transform visual;
         
         private Vector2 direction;
 
         public void Init(Vector2 dir)
         {
             direction = dir;
+            visual.rotation = MathUtils.Get2DRotationFromDirection(dir);
             impactListener.AddImpactListener(TargetHit);
         }
 
