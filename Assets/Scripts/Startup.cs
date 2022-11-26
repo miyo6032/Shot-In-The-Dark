@@ -17,7 +17,7 @@ namespace DefaultNamespace
             GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer, new GamePauseService()));
             FrontEndServiceProvider.RegisterServices(new FrontEndServices(lightingHandler));
             
-            GameServiceProvider.GetService<IGameTimer>().SetTimer(30, OnTimerOut, f => $"{f:0} seconds to make shot");
+            GameServiceProvider.GetService<IGameTimer>().SetTimer(30, OnTimerOut, f => $"{f:F1}");
             // GameServiceProvider.GetService<IGameTimer>().SetTimer(10, DoEmp, f => $"{f:0} seconds until EMP");
         }
         
