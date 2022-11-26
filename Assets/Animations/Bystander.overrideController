@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Advanced Bystander
+  m_Name: Bystander
   m_Controller: {fileID: 9100000, guid: c585d87ef3868cd4ebce0a207f53f237, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: e69366c2f3ff066429a36143a0df28f2, type: 2}

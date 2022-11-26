@@ -2,6 +2,7 @@
 using Game_Service;
 using Game_Service.Front_End_Services;
 using Game_Service.Services;
+using Level_Objects;
 using Lighting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -12,7 +13,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
     [SerializeField] List<LevelLight> levelLights;
     [SerializeField] Light2D globalLight;
     [SerializeField] private float targetGlobalLightIntensity;
-    [SerializeField] private List<SpriteRenderer> objectsToHide;
+    [SerializeField] private List<HideableVisual> objectsToHide;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
                     globalLight.intensity -= globalLightDimPerLevelLight;
                     foreach (var spriteRenderer in objectsToHide)
                     {
-                        SetReducedAlpha(spriteRenderer, spriteRendererDimPerLevelLight);
+                        spriteRenderer.Hide(spriteRendererDimPerLevelLight);
                     }
                 });
             }
@@ -46,20 +47,20 @@ public class LightingHandler : MonoBehaviour, ILightingService
         }
     }
 
-    private static void SetReducedAlpha(SpriteRenderer spriteRenderer, float spriteRendererDimPerLevelLight)
+    public static void SetReducedAlpha(SpriteRenderer spriteRenderer, float spriteRendererDimPerLevelLight)
     {
         var color = spriteRenderer.color;
         color = new Color(color.r, color.g, color.b, color.a * spriteRendererDimPerLevelLight);
         spriteRenderer.color = color;
     }
 
-    public void RegisterSpriteToHide(SpriteRenderer spriteRenderer)
+    public void RegisterSpriteToHide(HideableVisual spriteRenderer)
     {
         objectsToHide.Add(spriteRenderer);
         var gameState = GameServiceProvider.GetService<IGameState>().GameState;
         if (gameState != GameState.Setup)
         {
-            SetReducedAlpha(spriteRenderer, 0);
+            spriteRenderer.Hide(0.0f);
         }
     }
 
@@ -69,10 +70,15 @@ public class LightingHandler : MonoBehaviour, ILightingService
         {
             if ((pos - spriteRenderer.transform.position).sqrMagnitude < radius)
             {
-                var color = spriteRenderer.color;
-                color = new Color(color.r, color.g, color.b, 1.0f);
-                spriteRenderer.color = color;
+                spriteRenderer.Show();
             } 
         }
+    }
+
+    public static void RestoreAlpha(SpriteRenderer spriteRenderer)
+    {
+        var color = spriteRenderer.color;
+        color = new Color(color.r, color.g, color.b, 1.0f);
+        spriteRenderer.color = color;
     }
 }

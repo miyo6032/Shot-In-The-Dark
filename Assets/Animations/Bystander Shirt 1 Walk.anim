@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bystander Walk
+  m_Name: Bystander Shirt 1 Walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,37 +18,6 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
-  - curve:
-    - time: 0
-      value: {fileID: 985899995, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.083333336
-      value: {fileID: 1971710162, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.16666667
-      value: {fileID: 562578681, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.25
-      value: {fileID: -1682599457, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.33333334
-      value: {fileID: 1179689791, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.41666666
-      value: {fileID: -890872435, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.5
-      value: {fileID: 1696096231, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.5833333
-      value: {fileID: -609016190, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.6666667
-      value: {fileID: -63894961, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.75
-      value: {fileID: 2101758961, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.8333333
-      value: {fileID: 2135389327, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 0.9166667
-      value: {fileID: -1742280995, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - time: 1
-      value: {fileID: 452171371, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    attribute: m_Sprite
-    path: 
-    classID: 212
-    script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: -147663856, guid: 01f9fa4be4889d94ca034899d5fbe6dc, type: 3}
@@ -77,7 +46,7 @@ AnimationClip:
     - time: 1
       value: {fileID: 1859280049, guid: 01f9fa4be4889d94ca034899d5fbe6dc, type: 3}
     attribute: m_Sprite
-    path: Shirt
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 12
@@ -94,27 +63,7 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
-    - serializedVersion: 2
-      path: 1248117524
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 985899995, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 1971710162, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 562578681, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: -1682599457, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 1179689791, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: -890872435, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 1696096231, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: -609016190, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: -63894961, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 2101758961, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 2135389327, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: -1742280995, guid: 79c85a88a9318264aab10752714e4712, type: 3}
-    - {fileID: 452171371, guid: 79c85a88a9318264aab10752714e4712, type: 3}
     - {fileID: -147663856, guid: 01f9fa4be4889d94ca034899d5fbe6dc, type: 3}
     - {fileID: -1542370991, guid: 01f9fa4be4889d94ca034899d5fbe6dc, type: 3}
     - {fileID: -2072161053, guid: 01f9fa4be4889d94ca034899d5fbe6dc, type: 3}
