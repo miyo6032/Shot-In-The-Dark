@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: 2865159446327019924}
   - component: {fileID: 6986069196829251463}
   - component: {fileID: 1267832573098221649}
+  - component: {fileID: 4169438785699063382}
+  - component: {fileID: 7747136550629400994}
   m_Layer: 0
   m_Name: Bystander Advanced Movement
   m_TagString: Bystander
@@ -190,6 +192,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4d18a01291440c99eadcfbd14ab68b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4169438785699063382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126084402147566842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4076923c354d0ab38b9a163a642fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8157008684030219431}
+  randomColors:
+  - {r: 1, g: 0.80784315, b: 0.7058824, a: 1}
+  - {r: 0.7647059, g: 0.58431375, b: 0.50980395, a: 1}
+  - {r: 0.23529412, g: 0.18039216, b: 0.15686275, a: 1}
+--- !u!114 &7747136550629400994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126084402147566842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4521fcb99e49808098d3bf6915d189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 76166083007944510}
 --- !u!1 &5381297512035737719
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +356,7 @@ MonoBehaviour:
   - {x: 0.12099093, y: -0.23572639, z: 0}
   m_ShapePathHash: 1565763792
   m_Mesh: {fileID: 0}
-  m_InstanceId: 59388
+  m_InstanceId: 81652
 --- !u!1 &6388423556627231524
 GameObject:
   m_ObjectHideFlags: 0

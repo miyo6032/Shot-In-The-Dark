@@ -10,12 +10,14 @@ namespace DefaultNamespace
     {
         [SerializeField] private CountdownTimer countdownTimer;
         [SerializeField] private LightingHandler lightingHandler;
+        [SerializeField] private ColorService colorService;
         
         private void Awake()
         {
             Time.timeScale = 1.0f;
             GameServiceProvider.RegisterServices(new BackendServices(new GameStateManager(), countdownTimer, new GamePauseService()));
-            FrontEndServiceProvider.RegisterServices(new FrontEndServices(lightingHandler));
+            FrontEndServiceProvider.RegisterServices(new FrontEndServices(lightingHandler, colorService));
+            colorService.Init();
             
             GameServiceProvider.GetService<IGameTimer>().SetTimer(30, OnTimerOut, f => $"{f:F1}");
             // GameServiceProvider.GetService<IGameTimer>().SetTimer(10, DoEmp, f => $"{f:0} seconds until EMP");
