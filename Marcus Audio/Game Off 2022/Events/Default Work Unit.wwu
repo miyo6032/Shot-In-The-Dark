@@ -152,6 +152,23 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{AED204D7-853B-4082-8C7B-BB3C63E3D0FF}" ShortID="818596296">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Electrical Current Strong" ID="{994DC912-275D-4087-B3EC-226294279345}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AD28998E-C4F0-4BEF-BFFC-5F9E4ACC9E14}" ShortID="1014120119">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Electric Crackle" ID="{6E0A5C15-5846-476C-B6DD-7733AE688EA2}" WorkUnitID="{AF55AF88-F9AC-46E1-B11E-2531A15A9700}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Countdown" ID="{9C02388D-CFEF-4644-87BC-6F1847D3416A}">
@@ -180,6 +197,102 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Three_Male" ID="{7A821BB6-54D7-44CD-A75E-8E2CB3C07C69}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Endgame_loops" ID="{72CCB84A-C35A-48C5-A1E7-E64A15B7F494}">
+					<ChildrenList>
+						<Action Name="" ID="{4C047E5E-55A6-40C0-9F35-B692F714E007}" ShortID="658937424">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C0753177-9568-4857-BE77-B6A3B7F5813B}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Before_Diamond_Bass_Loop" ID="{1A5D6629-5335-4605-AD68-0ACE2C0E8464}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73CC5671-68D6-4BB7-9B00-AE4476DD0E6C}" ShortID="611108045">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Breathing_Sequence" ID="{7C165567-8F1F-41C7-888D-E24E90A264C6}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Win_Music" ID="{88BF5257-12F4-477B-995E-65E08DF79176}">
+					<ChildrenList>
+						<Action Name="" ID="{34685B2D-1C43-4E4E-9509-622EC62C23C0}" ShortID="702186968">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win_Game" ID="{B7C24786-83F8-4DF4-94D7-9A3C8C031DF3}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Lose_Music" ID="{9E55A320-B854-45BA-9E84-7F617B9EBD97}">
+					<ChildrenList>
+						<Action Name="" ID="{C5B29F49-FA01-40A9-8CA4-4C48AF98BF26}" ShortID="163439692">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lose_Game" ID="{36EA2EF7-2FEB-48FC-A76D-D5C3DEB1B5C1}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Streetlight_Smash" ID="{CCBE7C68-2411-47CC-A2C6-B59BD641883C}">
+					<ChildrenList>
+						<Action Name="" ID="{DC03D1C5-EE3B-4A1A-AE17-D86A6D5C1A2A}" ShortID="954849746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="420651__deleted-user-228014__failing-lightbulb" ID="{12627B81-E97A-499E-A42D-AB722153D733}" WorkUnitID="{F1BE74C6-0B86-4F90-99D4-5C3E6BAD3658}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{83630E2D-F6D8-4014-ACD5-09CA28C2C50D}" ShortID="431509953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="26873__freqman__lightbulbwink" ID="{E460F214-E97C-435E-AB9E-D84F56778347}" WorkUnitID="{F1BE74C6-0B86-4F90-99D4-5C3E6BAD3658}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3C33AE0F-E15A-49DD-BC25-D4871801C1A0}" ShortID="568157380">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="558969__sandb1ns__fluorescent-lightbulb-break" ID="{DA1D389E-8A91-49B3-B3CD-A4CE46544592}" WorkUnitID="{F1BE74C6-0B86-4F90-99D4-5C3E6BAD3658}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A4039353-C75E-46CA-A269-A70C10C94B0D}" ShortID="876015651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Foley Bell Tiny Bells Rattle 07" ID="{F1B14663-16A8-40C4-BEF7-D03C7279B742}" WorkUnitID="{F1BE74C6-0B86-4F90-99D4-5C3E6BAD3658}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Breathing" ID="{96EE1A1D-FF3A-4AC0-A114-94E76192FC61}">
+					<ChildrenList>
+						<Action Name="" ID="{9BC03AA3-DD0E-4721-A0E3-3A149FEC9F30}" ShortID="871729558">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Breathing_Sequence" ID="{7C165567-8F1F-41C7-888D-E24E90A264C6}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
