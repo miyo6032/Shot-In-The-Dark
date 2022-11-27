@@ -19,10 +19,10 @@
 						<AudioFileSource Name="Bass Drop High Impact" ID="{1AFD38CC-9646-4AEC-89B4-2924A1E9C3E9}">
 							<PropertyList>
 								<Property Name="FadeInDuration" Type="Real64" Value="0.440326396391424"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="3.0324602601156"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.57513596974584"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 								<Property Name="TrimBegin" Type="Real64" Value="0.435649727148704"/>
-								<Property Name="TrimEnd" Type="Real64" Value="3.75761380057804"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.01078569689455"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Bass Drop High Impact.wav</AudioFile>
@@ -243,7 +243,7 @@
 								<Property Name="FadeOutDuration" Type="Real64" Value="0.65923049132948"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 								<Property Name="TrimBegin" Type="Real64" Value="0.351589595375723"/>
-								<Property Name="TrimEnd" Type="Real64" Value="3.91143424855492"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.42392145865042"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Bass Drop High Impact 2.wav</AudioFile>
@@ -255,6 +255,84 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Bass Drop High Impact 2" ID="{AA57C2AA-4132-4FF5-AA4A-5E22E07596EB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Electric Crackle" ID="{6E0A5C15-5846-476C-B6DD-7733AE688EA2}" ShortID="467769598">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Electric Crackle" ID="{A5FD49AB-599E-45D0-BED1-3B62DAA039AD}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.462773369466022"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.62993382892038"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Electric Crackle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="892955703"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Electric Crackle" ID="{A5FD49AB-599E-45D0-BED1-3B62DAA039AD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Electrical Current Strong" ID="{994DC912-275D-4087-B3EC-226294279345}" ShortID="1001320056">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Electrical Current Strong" ID="{B4D50B9B-B774-436A-ABDE-22B647C4E8AD}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.214182714468234"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.157170049465898"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.309717450418094"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.2327392321185"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Electrical Current Strong.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="464555132"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Electrical Current Strong" ID="{B4D50B9B-B774-436A-ABDE-22B647C4E8AD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
