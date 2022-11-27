@@ -3,12 +3,14 @@ using Game_Service.Services;
 using Game_User_Interface;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Util;
 
 namespace Game_Management
 {
     public class GameFinish : MonoBehaviour
     {
         [SerializeField] private GameEndUI gameEndUI;
+        [SerializeField] private SceneIndexProvider mainMenuScene;
         private void Start()
         {
             GameServiceProvider.GetService<IGameState>().AddGameStateChangeListener(HandleGameEnd);
@@ -26,7 +28,7 @@ namespace Game_Management
             {
                 gameEndUI.ShowUI("Mission Success. Target hit.");
                 Time.timeScale = 0.2f;
-                // Go to next scene or something
+                LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, LoadMainMenu);
             }
             else if (gameState == GameState.OutOfTime)
             {
@@ -34,6 +36,11 @@ namespace Game_Management
                 Time.timeScale = 0.2f;
                 LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ReloadScene);
             }
+        }
+
+        private void LoadMainMenu()
+        {
+            SceneManager.LoadScene(mainMenuScene.Index);
         }
 
         private void ReloadScene()
