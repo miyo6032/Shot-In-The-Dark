@@ -43,6 +43,10 @@ public class LightingHandler : MonoBehaviour, ILightingService
             LeanTween.delayedCall(gameObject, fadeTime, () =>
             {
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.IsDark;
+                foreach (var spriteRenderer in objectsToHide)
+                {
+                    spriteRenderer.Hide(0f);
+                }
             });
         }
     }
