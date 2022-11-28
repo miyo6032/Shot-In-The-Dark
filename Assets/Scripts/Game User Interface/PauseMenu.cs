@@ -37,7 +37,12 @@ namespace Game_User_Interface
 
         private void Quit()
         {
-            SceneManager.LoadScene(menuScene.Index);
+            Time.timeScale = 1.0f;
+            AkSoundEngine.StopAll();
+            LeanTween.delayedCall(gameObject, 0.1f, () =>
+            {
+                SceneManager.LoadScene(menuScene.Index);
+            });
         }
     }
 }

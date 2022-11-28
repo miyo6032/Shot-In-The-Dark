@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1716381387">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3556749821">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3569852624">
+		<SoundBank Id="3161908922" Language="SFX" Hash="679811984">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -117,6 +117,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2757260539" Name="Play_Cityscape" ObjectPath="\Events\Default Work Unit\Play_Cityscape" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="137067243" Language="SFX">
+							<ShortName>428844__splushionsindasky__roof-top-distant-traffic.wav</ShortName>
+							<Path>SFX\428844__splushionsindasky__roof-top-distant-traffic_6A31FE06.wem</Path>
+						</File>
+						<File Id="444858503" Language="SFX">
+							<ShortName>Emergency Patrol Boat Siren Individual Siren Docked 01.wav</ShortName>
+							<Path>SFX\Emergency Patrol Boat Siren Individual Siren Docked 01_3931C834.wem</Path>
+						</File>
+						<File Id="551482752" Language="SFX">
+							<ShortName>523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall.wav</ShortName>
+							<Path>SFX\523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall_D79FB2B7.wem</Path>
+						</File>
+						<File Id="839531699" Language="SFX">
+							<ShortName>398159__inspectorj__ambience-london-street-a.wav</ShortName>
+							<Path>SFX\398159__inspectorj__ambience-london-street-a_C0D80F61.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="938552145" Name="Play_Lose_Music" ObjectPath="\Events\Default Work Unit\Play_Lose_Music" DurationType="OneShot" DurationMin="6." DurationMax="6.">
 					<IncludedMemoryFiles>
 						<File Id="67945233" Language="SFX">
@@ -170,6 +190,26 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4138329421" Name="Stop_Endgame_loops" ObjectPath="\Events\Default Work Unit\Stop_Endgame_loops" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1302021521" Name="Streetlight_Smash" ObjectPath="\Events\Default Work Unit\Streetlight_Smash" DurationType="OneShot" DurationMin="3.915604" DurationMax="3.915604">
+					<IncludedMemoryFiles>
+						<File Id="52824185" Language="SFX">
+							<ShortName>558969__sandb1ns__fluorescent-lightbulb-break.wav</ShortName>
+							<Path>SFX\558969__sandb1ns__fluorescent-lightbulb-break_58454724.wem</Path>
+						</File>
+						<File Id="780337907" Language="SFX">
+							<ShortName>Foley Bell Tiny Bells Rattle 07.wav</ShortName>
+							<Path>SFX\Foley Bell Tiny Bells Rattle 07_EE95160E.wem</Path>
+						</File>
+						<File Id="781321095" Language="SFX">
+							<ShortName>420651__deleted-user-228014__failing-lightbulb.wav</ShortName>
+							<Path>SFX\420651__deleted-user-228014__failing-lightbulb_5CB8576D.wem</Path>
+						</File>
+						<File Id="908418349" Language="SFX">
+							<ShortName>26873__freqman__lightbulbwink.wav</ShortName>
+							<Path>SFX\26873__freqman__lightbulbwink_C18F12B8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

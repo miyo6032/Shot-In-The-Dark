@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Util;
@@ -18,7 +17,8 @@ namespace Game_User_Interface
 
         private void LoadLevel()
         {
-            LeanTween.delayedCall(gameObject, 0.3f, () =>
+            LeanTween.delayedCall(gameObject, 0.1f, AkSoundEngine.StopAll);
+            LeanTween.delayedCall(gameObject, 0.2f, () =>
             {
                 SceneManager.LoadScene(levelToLoad.Index);
             });

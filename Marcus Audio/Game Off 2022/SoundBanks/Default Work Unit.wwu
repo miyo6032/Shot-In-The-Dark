@@ -13,7 +13,9 @@
 						<ObjectRef Name="Play_Movement_Footstep" ID="{6F071441-0C9B-458A-8ED5-3100AD7F9EE0}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Lose_Music" ID="{9E55A320-B854-45BA-9E84-7F617B9EBD97}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Win_Music" ID="{88BF5257-12F4-477B-995E-65E08DF79176}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Streetlight_Smash" ID="{CCBE7C68-2411-47CC-A2C6-B59BD641883C}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Endgame_loops" ID="{72CCB84A-C35A-48C5-A1E7-E64A15B7F494}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cityscape" ID="{C741DDBC-DD77-4912-8D09-6D6115EF2E14}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Breathing" ID="{96EE1A1D-FF3A-4AC0-A114-94E76192FC61}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EMP_Sound" ID="{0CE9C8BE-FEF2-4B40-97E3-41AB2E64261F}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Crowd_Noise" ID="{A90D7A6C-7756-4E1F-BFD9-530139BE79AE}" WorkUnitID="{D53B1536-175D-4BC9-A2DB-0A42F10B32DD}" Origin="Manual" Filter="7"/>
