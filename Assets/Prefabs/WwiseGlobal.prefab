@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6864222421849981108}
   - component: {fileID: 6864222421849981109}
-  - component: {fileID: 6864222421849981111}
   - component: {fileID: 6864222421849981110}
   m_Layer: 0
   m_Name: WwiseGlobal
@@ -59,22 +58,6 @@ MonoBehaviour:
   spatialAudioPoolSize: 0
   maxSoundPropagationDepth: 0
   engineLogging: 0
---- !u!114 &6864222421849981111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6864222421849981131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b4c817a827d43fa95e2973f755d44a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1a3d4e230f2c4a84991031ad68821e64, type: 2}
 --- !u!114 &6864222421849981110
 MonoBehaviour:
   m_ObjectHideFlags: 0
