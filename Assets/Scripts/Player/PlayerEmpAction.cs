@@ -27,7 +27,7 @@ namespace Player
         {
             if (gameStateService.GameState == GameState.Setup)
             {
-                // LeanTween.delayedCall(gameObject, LightingHandler.FadeTime, () => breatheEvent.Post(gameObject));
+                LeanTween.delayedCall(gameObject, LightingHandler.FadeTime, () => breatheEvent.Post(gameObject));
                 empSoundEvent.Post(gameObject);
                 animator.SetTrigger(Emp);
                 uiAnimator.SetTrigger(Emp);

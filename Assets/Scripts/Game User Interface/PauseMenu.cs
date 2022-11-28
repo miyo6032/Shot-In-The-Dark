@@ -26,6 +26,7 @@ namespace Game_User_Interface
 
         private void Restart()
         {
+            AkSoundEngine.StopAll();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
@@ -39,10 +40,7 @@ namespace Game_User_Interface
         {
             Time.timeScale = 1.0f;
             AkSoundEngine.StopAll();
-            LeanTween.delayedCall(gameObject, 0.1f, () =>
-            {
-                SceneManager.LoadScene(menuScene.Index);
-            });
+            SceneManager.LoadScene(menuScene.Index);
         }
     }
 }

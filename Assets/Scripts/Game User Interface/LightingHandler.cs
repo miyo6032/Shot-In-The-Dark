@@ -68,6 +68,11 @@ public class LightingHandler : MonoBehaviour, ILightingService
         }
     }
 
+    public void UnregisterSpriteToHide(HideableVisual hideableVisual)
+    {
+        objectsToHide.Remove(hideableVisual);
+    }
+
     public void ShowSpritesInRadius(Vector3 pos, float radius)
     {
         foreach (var spriteRenderer in objectsToHide)

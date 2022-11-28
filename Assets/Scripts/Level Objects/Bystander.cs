@@ -42,5 +42,10 @@ namespace Level_Objects
             LightingHandler.RestoreAlpha(shirtRenderer);
             LightingHandler.RestoreAlpha(pantsRenderer);
         }
+
+        private void OnDestroy()
+        {
+            FrontEndServiceProvider.GetService<ILightingService>().UnregisterSpriteToHide(this);
+        }
     }
 }

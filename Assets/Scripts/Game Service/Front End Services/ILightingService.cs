@@ -7,6 +7,7 @@ namespace Game_Service.Front_End_Services
     public interface ILightingService : IFrontEndService
     {
         public void RegisterSpriteToHide(HideableVisual spriteRenderer);
+        public void UnregisterSpriteToHide(HideableVisual hideableVisual);
         public void ShowSpritesInRadius(Vector3 pos, float radius);
     }
 }

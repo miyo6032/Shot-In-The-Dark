@@ -17,9 +17,9 @@ namespace Game_User_Interface
 
         private void LoadLevel()
         {
-            LeanTween.delayedCall(gameObject, 0.1f, AkSoundEngine.StopAll);
             LeanTween.delayedCall(gameObject, 0.2f, () =>
             {
+                AkSoundEngine.StopAll();
                 SceneManager.LoadScene(levelToLoad.Index);
             });
         }

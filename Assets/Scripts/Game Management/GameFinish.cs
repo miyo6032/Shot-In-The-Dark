@@ -61,11 +61,13 @@ namespace Game_Management
 
         private void LoadMainMenu()
         {
+            AkSoundEngine.StopAll();
             SceneManager.LoadScene(mainMenuScene.Index);
         }
 
         private void ReloadScene()
         {
+            AkSoundEngine.StopAll();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
