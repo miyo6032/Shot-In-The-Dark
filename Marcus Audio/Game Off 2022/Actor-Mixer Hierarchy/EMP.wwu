@@ -11,6 +11,9 @@
 						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
 						</Reference>
@@ -152,6 +155,9 @@
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 							<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>

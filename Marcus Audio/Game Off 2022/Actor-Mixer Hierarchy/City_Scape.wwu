@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A49D19C0-562E-4006-86C2-34CF4FA25556}" SchemaVersion="103" RootDocumentID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" ParentDocumentID="{1D8B0EC8-734F-451A-9570-B044B39DFA90}">
+	<AudioObjects>
+		<WorkUnit Name="City_Scape" ID="{A49D19C0-562E-4006-86C2-34CF4FA25556}" OwnerID="{1D8B0EC8-734F-451A-9570-B044B39DFA90}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Emergency Patrol Boat Siren Individual Siren Docked 01" ID="{FCC3A278-8568-40E0-BCA2-21C51FEA7BCA}" ShortID="968400053">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-29</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Emergency Patrol Boat Siren Individual Siren Docked 01" ID="{D0CDF7CC-C127-4BB0-A71D-D20C23E62B71}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.15699863574352"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="9.0849877216917"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="9.65018281036835"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Emergency Patrol Boat Siren Individual Siren Docked 01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="444858503"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Emergency Patrol Boat Siren Individual Siren Docked 01" ID="{D0CDF7CC-C127-4BB0-A71D-D20C23E62B71}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="398159__inspectorj__ambience-london-street-a" ID="{8E0A07B6-E2B4-4186-AD47-57E17A3D543A}" ShortID="578089520">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="398159__inspectorj__ambience-london-street-a" ID="{69E2B1AE-1EE7-4569-9923-849611CE3B6B}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.421119061540032"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.308820645129357"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.561492082053376"/>
+								<Property Name="TrimEnd" Type="Real64" Value="15.7779275056999"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>398159__inspectorj__ambience-london-street-a.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="839531699"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="398159__inspectorj__ambience-london-street-a" ID="{69E2B1AE-1EE7-4569-9923-849611CE3B6B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall" ID="{80A0FECE-91A2-4193-8B66-E6A41921274F}" ShortID="630226792">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall" ID="{30A120F7-16FD-4213-A093-14A8B87A5960}">
+							<Language>SFX</Language>
+							<AudioFile>523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="551482752"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall" ID="{30A120F7-16FD-4213-A093-14A8B87A5960}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="428844__splushionsindasky__roof-top-distant-traffic" ID="{1DD19AC8-6E7F-4412-A569-321BBA549C6B}" ShortID="835475352">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="428844__splushionsindasky__roof-top-distant-traffic" ID="{47DF72F8-F9A3-4CD2-B7F5-80E77E2964E6}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.454297407912688"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.151432469304229"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="2.95293315143247"/>
+								<Property Name="TrimEnd" Type="Real64" Value="15.0675306957708"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>428844__splushionsindasky__roof-top-distant-traffic.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="137067243"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="428844__splushionsindasky__roof-top-distant-traffic" ID="{47DF72F8-F9A3-4CD2-B7F5-80E77E2964E6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Crowd Talking" ID="{701587FE-D41E-4C6B-9401-575DFD894605}" ShortID="747353466">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -18,8 +19,16 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Object_Attenuation" ID="{3C03A42F-78A2-43DC-839D-E063BC9ABAC0}" WorkUnitID="{387A7E30-D6CD-4DB1-A44E-7790009C4953}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
 						</Reference>
