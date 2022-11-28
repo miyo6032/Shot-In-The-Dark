@@ -1,35 +1,45 @@
 Event	ID	Name			Wwise Object Path	Notes
 	521623505	EMP_Sound			\Default Work Unit\EMP_Sound	
 	871813740	Player_Hit			\Default Work Unit\Player_Hit	
+	938552145	Play_Lose_Music			\Default Work Unit\Play_Lose_Music	
 	1171885424	Hit_Target			\Default Work Unit\Hit_Target	
 	1952436935	Menu_Enter			\Default Work Unit\Menu_Enter	
 	2710292464	Menu_Movement			\Default Work Unit\Menu_Movement	
+	3148844260	Play_Win_Music			\Default Work Unit\Play_Win_Music	
 	3554186090	Play_Movement_Footstep			\Default Work Unit\Play_Movement_Footstep	
 	3714975495	Crowd_Noise			\Default Work Unit\Crowd_Noise	
 	3725903807	Music_Start			\Default Work Unit\Music_Start	
 	4004702906	Player_Shoot			\Default Work Unit\Player_Shoot	
+	4093367312	Play_Breathing			\Default Work Unit\Play_Breathing	
+	4138329421	Stop_Endgame_loops			\Default Work Unit\Stop_Endgame_loops	
 
 Effect plug-ins	ID	Name	Type				Notes
 	2995775460	Room_Small	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	8914327	Before_Diamond_Bass_Loop	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Before_Diamond_Bass_Loop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Before_Diamond_Bass_Loop		2962348
+	8914327	Before_Diamond_Bass_Loop	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Before_Diamond_Bass_Loop_9F074F18.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Before_Diamond_Bass_Loop		2719868
 	29000921	Menu_Movement	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Menu_Movement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_UI_Sounds\Menu_Movement		21300
+	67945233	Lose_Game	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Lose_Game_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Lose_Game		1058464
 	87964442	Crowd Footsteps	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Crowd Footsteps_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crowd Noises\Crowd Footsteps		878972
-	150677986	Bass Drop High Impact 2	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact 2_328F8836.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact 2		683556
+	97534558	Inhale	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\387620__mlitty__slow-breath-relax_7F319397.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Breathing_Sequence\Inhale		472752
+	150677986	Bass Drop High Impact 2	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact 2_E362E910.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact 2		589952
 	186127181	Industry Lid Plastic Tube Lid Opening 01	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Industry Lid Plastic Tube Lid Opening 01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Industry Lid Plastic Tube Lid Opening 01		24832
 	262945368	Bass Drop Interference	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop Interference_2B848FEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop Interference		329784
 	308699503	Uhh soft 1	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Uhh soft 1_013D3003.wem		\Actor-Mixer Hierarchy\Default Work Unit\Target\Uhh soft 1		62664
+	464555132	Electrical Current Strong	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Electrical Current Strong_18BBDEB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Electrical Current Strong		169674
 	478377020	Menu_Enter	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Menu_Enter_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_UI_Sounds\Menu_Enter		21300
+	497829812	Exhale	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\387620__mlitty__slow-breath-relax_E7D7A150.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Breathing_Sequence\Exhale		556164
 	545505773	crowd-talking-10	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\crowd-talking-10_A8A52D7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crowd Noises\Crowd Talking\crowd-talking-10		2383024
 	718007540	Step 1	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Step 1_893058C0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Footsteps\Step 1		89836
 	725480074	Horror Body Drop 03	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Horror Body Drop 03_8E7C8BFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Target\Horror Body Drop 03		128964
 	781127359	Bass Drop Firework	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop Firework_B4DA7B2E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop Firework		780592
 	855470072	crowd-talking-5	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\crowd-talking-5_6A803F86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crowd Noises\Crowd Talking\crowd-talking-5		1933096
 	889976677	Step 4	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Step 4_0DE36C32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Footsteps\Step 4		57696
+	892955703	Electric Crackle	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Electric Crackle_E95FC22E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Electric Crackle		287584
 	907733002	Step 3	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Step 3_13DC3ED9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Footsteps\Step 3		55480
-	956697300	Bass Drop High Impact	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact_D01E1F20.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact		637880
+	956697300	Bass Drop High Impact	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact_ED5B171A.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact		494492
 	976944957	crowd-talking-8	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\crowd-talking-8_BE2F16CA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crowd Noises\Crowd Talking\crowd-talking-8		2431664
 	1001382648	Impact Vegetables Hit 02	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Impact Vegetables Hit 02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Impact Vegetables Hit 02		72984
 	1046075124	Shoot	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\560011__combatsfx4you__gun-silencer_255702FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Shoot		74832
+	1063481656	Win_Game	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Win_Game_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Win_Game		952624
 

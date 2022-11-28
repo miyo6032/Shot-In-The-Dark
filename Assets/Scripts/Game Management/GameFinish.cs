@@ -4,6 +4,7 @@ using Game_User_Interface;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Util;
+using Event = AK.Wwise.Event;
 
 namespace Game_Management
 {
@@ -11,6 +12,9 @@ namespace Game_Management
     {
         [SerializeField] private GameEndUI gameEndUI;
         [SerializeField] private SceneIndexProvider mainMenuScene;
+        [SerializeField] private Event winMusic;
+        [SerializeField] private Event stopSounds;
+        
         private void Start()
         {
             GameServiceProvider.GetService<IGameState>().AddGameStateChangeListener(HandleGameEnd);
@@ -21,21 +25,38 @@ namespace Game_Management
             if (gameState == GameState.BystanderHit)
             {
                 gameEndUI.ShowUI("You hit a bystander!");
-                Time.timeScale = 0.2f;
-                LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ReloadScene);
+                Lose();
             }
             else if (gameState == GameState.TargetHit)
             {
                 gameEndUI.ShowUI("Mission Success. Target hit.");
-                Time.timeScale = 0.2f;
-                LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, LoadMainMenu);
+                Win();
             }
             else if (gameState == GameState.OutOfTime)
             {
                 gameEndUI.ShowUI("Out of time!");
-                Time.timeScale = 0.2f;
-                LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ReloadScene);
+                Lose();
             }
+        }
+
+        private void Win()
+        {
+            Time.timeScale = 0.2f;
+            LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, LoadMainMenu);
+            LeanTween.delayedCall(gameObject, 1.0f * Time.timeScale, StopSound);
+            // winMusic.Post(gameObject);
+        }
+
+        private void Lose()
+        {
+            Time.timeScale = 0.2f;
+            LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ReloadScene);
+            LeanTween.delayedCall(gameObject, 1.0f * Time.timeScale, StopSound);
+        }
+
+        private void StopSound()
+        {
+            stopSounds.Post(gameObject);
         }
 
         private void LoadMainMenu()

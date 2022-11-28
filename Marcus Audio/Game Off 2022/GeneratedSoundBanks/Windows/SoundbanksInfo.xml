@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3418443248">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3569852624">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -41,23 +41,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="521623505" Name="EMP_Sound" ObjectPath="\Events\Default Work Unit\EMP_Sound" DurationType="OneShot" DurationMin="3.759845" DurationMax="3.759845">
+				<Event Id="521623505" Name="EMP_Sound" ObjectPath="\Events\Default Work Unit\EMP_Sound" DurationType="OneShot" DurationMin="3.329934" DurationMax="3.329934">
 					<IncludedMemoryFiles>
 						<File Id="150677986" Language="SFX">
 							<ShortName>Bass Drop High Impact 2.wav</ShortName>
-							<Path>SFX\Bass Drop High Impact 2_328F8836.wem</Path>
+							<Path>SFX\Bass Drop High Impact 2_E362E910.wem</Path>
 						</File>
 						<File Id="262945368" Language="SFX">
 							<ShortName>Bass Drop Interference.wav</ShortName>
 							<Path>SFX\Bass Drop Interference_2B848FEC.wem</Path>
 						</File>
+						<File Id="464555132" Language="SFX">
+							<ShortName>Electrical Current Strong.wav</ShortName>
+							<Path>SFX\Electrical Current Strong_18BBDEB5.wem</Path>
+						</File>
 						<File Id="781127359" Language="SFX">
 							<ShortName>Bass Drop Firework.wav</ShortName>
 							<Path>SFX\Bass Drop Firework_B4DA7B2E.wem</Path>
 						</File>
+						<File Id="892955703" Language="SFX">
+							<ShortName>Electric Crackle.wav</ShortName>
+							<Path>SFX\Electric Crackle_E95FC22E.wem</Path>
+						</File>
 						<File Id="956697300" Language="SFX">
 							<ShortName>Bass Drop High Impact.wav</ShortName>
-							<Path>SFX\Bass Drop High Impact_D01E1F20.wem</Path>
+							<Path>SFX\Bass Drop High Impact_ED5B171A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -89,11 +97,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start" DurationType="OneShot" DurationMin="15.428562" DurationMax="15.428562">
+				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="8914327" Language="SFX">
 							<ShortName>Before_Diamond_Bass_Loop.wav</ShortName>
-							<Path>SFX\Before_Diamond_Bass_Loop_10C4C929.wem</Path>
+							<Path>SFX\Before_Diamond_Bass_Loop_9F074F18.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4093367312" Name="Play_Breathing" ObjectPath="\Events\Default Work Unit\Play_Breathing" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="97534558" Language="SFX">
+							<ShortName>387620__mlitty__slow-breath-relax.wav</ShortName>
+							<Path>SFX\387620__mlitty__slow-breath-relax_7F319397.wem</Path>
+						</File>
+						<File Id="497829812" Language="SFX">
+							<ShortName>387620__mlitty__slow-breath-relax.wav</ShortName>
+							<Path>SFX\387620__mlitty__slow-breath-relax_E7D7A150.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="938552145" Name="Play_Lose_Music" ObjectPath="\Events\Default Work Unit\Play_Lose_Music" DurationType="OneShot" DurationMin="6." DurationMax="6.">
+					<IncludedMemoryFiles>
+						<File Id="67945233" Language="SFX">
+							<ShortName>Lose_Game.wav</ShortName>
+							<Path>SFX\Lose_Game_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -110,6 +138,14 @@
 						<File Id="907733002" Language="SFX">
 							<ShortName>Step 3.wav</ShortName>
 							<Path>SFX\Step 3_13DC3ED9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3148844260" Name="Play_Win_Music" ObjectPath="\Events\Default Work Unit\Play_Win_Music" DurationType="OneShot" DurationMin="5.4" DurationMax="5.4">
+					<IncludedMemoryFiles>
+						<File Id="1063481656" Language="SFX">
+							<ShortName>Win_Game.wav</ShortName>
+							<Path>SFX\Win_Game_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -133,6 +169,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4138329421" Name="Stop_Endgame_loops" ObjectPath="\Events\Default Work Unit\Stop_Endgame_loops" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

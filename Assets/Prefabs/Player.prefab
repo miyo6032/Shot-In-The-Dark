@@ -89,6 +89,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7060aa9ea4c25ab429e9277e47c489e9, type: 2}
+  breatheEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7a66fa4bc4103643b3516c2cc08bf52, type: 2}
   animator: {fileID: 1819683963863974867}
   uiAnimator: {fileID: 0}
 --- !u!114 &1819683963767746541

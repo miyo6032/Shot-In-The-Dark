@@ -10,6 +10,7 @@ using UnityEngine.U2D;
 
 public class LightingHandler : MonoBehaviour, ILightingService
 {
+    public const float FadeTime = 1.0f;
     [SerializeField] List<LevelLight> levelLights;
     [SerializeField] Light2D globalLight;
     [SerializeField] private float targetGlobalLightIntensity;
@@ -24,12 +25,11 @@ public class LightingHandler : MonoBehaviour, ILightingService
     {
         if (gameState == GameState.EmpActivated)
         {
-            float fadeTime = 1.0f;
             float globalLightDimPerLevelLight = (globalLight.intensity - targetGlobalLightIntensity) / levelLights.Count;
             float spriteRendererDimPerLevelLight = 1.0f / levelLights.Count;
             foreach (var levelLight in levelLights)
             {
-                LeanTween.delayedCall(gameObject, Random.Range(0.0f, fadeTime), () =>
+                LeanTween.delayedCall(gameObject, Random.Range(0.0f, FadeTime), () =>
                 {
                     levelLight.TurnOff();
                     globalLight.intensity -= globalLightDimPerLevelLight;
@@ -40,7 +40,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
                 });
             }
 
-            LeanTween.delayedCall(gameObject, fadeTime, () =>
+            LeanTween.delayedCall(gameObject, FadeTime, () =>
             {
                 GameServiceProvider.GetService<IGameState>().GameState = GameState.IsDark;
                 foreach (var spriteRenderer in objectsToHide)

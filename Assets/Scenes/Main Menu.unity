@@ -260,6 +260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9dc72fd58604c81bdb953ddc80bcb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stopLoops:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: da93eb24287d44f429ed9e9ecf3bcbd7, type: 2}
 --- !u!4 &459551176
 Transform:
   m_ObjectHideFlags: 0
@@ -315,10 +319,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0023310024
-    y: 0.002762431
-    width: 0.994561
-    height: 0.9944752
+    x: 0.44047618
+    y: -0.055374593
+    width: 0.5860806
+    height: 0.5863192
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
