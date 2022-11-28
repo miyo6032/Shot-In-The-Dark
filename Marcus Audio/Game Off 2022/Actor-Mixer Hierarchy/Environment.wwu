@@ -4,6 +4,7 @@
 		<WorkUnit Name="Environment" ID="{1D8B0EC8-734F-451A-9570-B044B39DFA90}" OwnerID="{BC122D9E-6DE1-4548-AE8C-98EEA2BE430C}" PersistMode="Nested">
 			<ChildrenList>
 				<WorkUnit Name="LightBulb" ID="{F1BE74C6-0B86-4F90-99D4-5C3E6BAD3658}" PersistMode="Reference"/>
+				<WorkUnit Name="City_Scape" ID="{A49D19C0-562E-4006-86C2-34CF4FA25556}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

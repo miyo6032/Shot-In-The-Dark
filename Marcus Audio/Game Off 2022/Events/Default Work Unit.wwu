@@ -30,6 +30,12 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D66BAD7F-E7E1-41C4-95F9-215879AC1634}" ShortID="1062017204">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Menu_Movement" ID="{46ECFE1B-6954-4450-9876-2B048CA87F98}">
@@ -204,23 +210,6 @@
 				</Event>
 				<Event Name="Stop_Endgame_loops" ID="{72CCB84A-C35A-48C5-A1E7-E64A15B7F494}">
 					<ChildrenList>
-						<Action Name="" ID="{4C047E5E-55A6-40C0-9F35-B692F714E007}" ShortID="658937424">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{C0753177-9568-4857-BE77-B6A3B7F5813B}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Before_Diamond_Bass_Loop" ID="{1A5D6629-5335-4605-AD68-0ACE2C0E8464}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{73CC5671-68D6-4BB7-9B00-AE4476DD0E6C}" ShortID="611108045">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -228,6 +217,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Breathing_Sequence" ID="{7C165567-8F1F-41C7-888D-E24E90A264C6}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C299F8F1-3B01-4B74-97BC-1255C55C5065}" ShortID="1073507372">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Before_Diamond_Bass_Loop" ID="{1A5D6629-5335-4605-AD68-0ACE2C0E8464}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -293,6 +292,63 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Breathing_Sequence" ID="{7C165567-8F1F-41C7-888D-E24E90A264C6}" WorkUnitID="{B4EF0E1E-5338-4ACD-97D0-0B834559BB6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cityscape" ID="{C741DDBC-DD77-4912-8D09-6D6115EF2E14}">
+					<ChildrenList>
+						<Action Name="" ID="{129310D0-5F10-4313-B017-C3D1A3A01C19}" ShortID="137542938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="428844__splushionsindasky__roof-top-distant-traffic" ID="{1DD19AC8-6E7F-4412-A569-321BBA549C6B}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{810134E7-6436-4153-A419-308B5D8E0823}" ShortID="1019365176">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="398159__inspectorj__ambience-london-street-a" ID="{8E0A07B6-E2B4-4186-AD47-57E17A3D543A}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2B20018F-504C-4D2C-99DA-0538AD8B63BF}" ShortID="366625626">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall" ID="{80A0FECE-91A2-4193-8B66-E6A41921274F}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C702FB05-25F8-43C1-B197-DBF6EC89590D}" ShortID="390173190">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AE390D84-B44F-4D09-A9BE-759D756E44F2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="24"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emergency Patrol Boat Siren Individual Siren Docked 01" ID="{FCC3A278-8568-40E0-BCA2-21C51FEA7BCA}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stopwatch" ID="{7979017F-D93D-48F4-AEEA-38EB810C83B3}">
+					<ChildrenList>
+						<Action Name="" ID="{C77380B2-57D3-409C-B29F-93FBB30405FB}" ShortID="258361521">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stopwatch_Switch_Container" ID="{B78550C3-CD70-4D87-AD1C-04AB47315CCD}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

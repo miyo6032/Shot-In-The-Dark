@@ -171,6 +171,123 @@
 						<ActiveSource Name="Two_Male" ID="{7FC66D1C-CD1E-48C7-8C6A-B4EBC55F728B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Stopwatch_Switch_Container" ID="{B78550C3-CD70-4D87-AD1C-04AB47315CCD}" ShortID="164632534">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Slow" ID="{AA2DEBE9-8ED3-46B7-BB73-0C544DE24765}" WorkUnitID="{BE5BFE68-7446-4AE2-A8C4-0D57D3F4FCBC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Switch_Time" ID="{BF36527F-548A-489C-8DAE-FCB6CED22145}" WorkUnitID="{BE5BFE68-7446-4AE2-A8C4-0D57D3F4FCBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Slow" ID="{530BC7D6-0FDD-4466-A7AD-2C685D43532F}" ShortID="598523178">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="412750__blukotek__ticking-of-the-clock-02" ID="{1047CCCF-A1F3-44A5-8D0F-AE84FFFC3A69}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0394893782888326"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.165137400116936"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.301555252387449"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.50259208731241"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>412750__blukotek__ticking-of-the-clock-02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="300890852"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="412750__blukotek__ticking-of-the-clock-02" ID="{1047CCCF-A1F3-44A5-8D0F-AE84FFFC3A69}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Urgent" ID="{9E012E1B-72D7-4374-87E7-F06C283FD65B}" ShortID="79468057">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1AE220D5-6EB0-4660-99E1-B8D87DFF66A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6A1716DC-674C-4A64-ACE1-2990ED6D5BD0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="412750__blukotek__ticking-of-the-clock-02" ID="{5A9D8997-FECF-46BB-9BCE-6776F423AD28}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0394893782888326"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.165137400116936"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0287195478464237"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.434383161177153"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>412750__blukotek__ticking-of-the-clock-02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="899786147"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="412750__blukotek__ticking-of-the-clock-02" ID="{5A9D8997-FECF-46BB-9BCE-6776F423AD28}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Urgent" ID="{9E012E1B-72D7-4374-87E7-F06C283FD65B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Slow" ID="{530BC7D6-0FDD-4466-A7AD-2C685D43532F}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Slow" ID="{AA2DEBE9-8ED3-46B7-BB73-0C544DE24765}"/>
+								<ItemList>
+									<ItemRef Name="Slow" ID="{530BC7D6-0FDD-4466-A7AD-2C685D43532F}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Urgent" ID="{341EBFEF-649A-496B-8497-D3D5FCC0E858}"/>
+								<ItemList>
+									<ItemRef Name="Urgent" ID="{9E012E1B-72D7-4374-87E7-F06C283FD65B}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
