@@ -213,6 +213,7 @@
 						<Action Name="" ID="{73CC5671-68D6-4BB7-9B00-AE4476DD0E6C}" ShortID="611108045">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -223,10 +224,77 @@
 						<Action Name="" ID="{C299F8F1-3B01-4B74-97BC-1255C55C5065}" ShortID="1073507372">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Before_Diamond_Bass_Loop" ID="{1A5D6629-5335-4605-AD68-0ACE2C0E8464}" WorkUnitID="{09FB1B24-EEB6-4F9F-90E2-6CC52DF0F690}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D074D960-D342-4B2C-B052-8D04C1C25C37}" ShortID="435960201">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crowd Talking" ID="{701587FE-D41E-4C6B-9401-575DFD894605}" WorkUnitID="{6B4D1064-0326-4E86-8D40-3AC257FBDCF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B20B6330-480C-42CD-A875-966C7F551690}" ShortID="159046433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crowd Footsteps" ID="{D1419462-94D2-4B5A-900B-B715CFE05E18}" WorkUnitID="{6B4D1064-0326-4E86-8D40-3AC257FBDCF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6C74AA32-AE9B-44C8-9BDB-601C225D297D}" ShortID="1021598411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="523395__arpeggio1980__medium-sized-crowd-around-100-people-chatting-in-a-small-hall" ID="{80A0FECE-91A2-4193-8B66-E6A41921274F}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E8F779BA-B71B-45E0-BB75-6B38E4D116E7}" ShortID="210114972">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="398159__inspectorj__ambience-london-street-a" ID="{8E0A07B6-E2B4-4186-AD47-57E17A3D543A}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DC2F4EC1-889E-443E-AAE5-8CC81F61AC1C}" ShortID="328706217">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="428844__splushionsindasky__roof-top-distant-traffic" ID="{1DD19AC8-6E7F-4412-A569-321BBA549C6B}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C4F487D0-ACD3-46B6-B85C-7F4ED9240B1D}" ShortID="270515028">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emergency Patrol Boat Siren Individual Siren Docked 01" ID="{FCC3A278-8568-40E0-BCA2-21C51FEA7BCA}" WorkUnitID="{A49D19C0-562E-4006-86C2-34CF4FA25556}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -349,6 +417,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Stopwatch_Switch_Container" ID="{B78550C3-CD70-4D87-AD1C-04AB47315CCD}" WorkUnitID="{B5A66A68-ECB9-4548-9C93-0D1402C1D5E2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Stopwatch_Switch" ID="{B90A4509-F19F-4F18-AF7B-B488028DFA42}">
+					<ChildrenList>
+						<Action Name="" ID="{F562D138-6B12-4123-BB1C-8FDD5720DF73}" ShortID="493293815">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Urgent" ID="{341EBFEF-649A-496B-8497-D3D5FCC0E858}" WorkUnitID="{BE5BFE68-7446-4AE2-A8C4-0D57D3F4FCBC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
