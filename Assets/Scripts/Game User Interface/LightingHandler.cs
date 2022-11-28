@@ -6,7 +6,7 @@ using Level_Objects;
 using Lighting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using UnityEngine.U2D;
+using Event = AK.Wwise.Event;
 
 public class LightingHandler : MonoBehaviour, ILightingService
 {
@@ -15,6 +15,7 @@ public class LightingHandler : MonoBehaviour, ILightingService
     [SerializeField] Light2D globalLight;
     [SerializeField] private float targetGlobalLightIntensity;
     [SerializeField] private List<HideableVisual> objectsToHide;
+    [SerializeField] private Event smashEvent;
 
     private void Start()
     {
@@ -29,7 +30,8 @@ public class LightingHandler : MonoBehaviour, ILightingService
             float spriteRendererDimPerLevelLight = 1.0f / levelLights.Count;
             foreach (var levelLight in levelLights)
             {
-                LeanTween.delayedCall(gameObject, Random.Range(0.0f, FadeTime), () =>
+                var delayTime = Random.Range(0.5f, FadeTime);
+                LeanTween.delayedCall(gameObject, delayTime, () =>
                 {
                     levelLight.TurnOff();
                     globalLight.intensity -= globalLightDimPerLevelLight;
@@ -37,6 +39,11 @@ public class LightingHandler : MonoBehaviour, ILightingService
                     {
                         spriteRenderer.Hide(spriteRendererDimPerLevelLight);
                     }
+                });
+                var soundDelay = 0.5f;
+                LeanTween.delayedCall(gameObject, delayTime - soundDelay, () =>
+                {
+                    smashEvent.Post(gameObject);
                 });
             }
 
