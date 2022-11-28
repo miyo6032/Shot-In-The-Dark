@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1952436935	Menu_Enter			\Default Work Unit\Menu_Enter	
 	2710292464	Menu_Movement			\Default Work Unit\Menu_Movement	
 	2757260539	Play_Cityscape			\Default Work Unit\Play_Cityscape	
+	3077001935	Play_Stopwatch			\Default Work Unit\Play_Stopwatch	
 	3148844260	Play_Win_Music			\Default Work Unit\Play_Win_Music	
 	3554186090	Play_Movement_Footstep			\Default Work Unit\Play_Movement_Footstep	
 	3714975495	Crowd_Noise			\Default Work Unit\Crowd_Noise	
@@ -14,6 +15,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	4004702906	Player_Shoot			\Default Work Unit\Player_Shoot	
 	4093367312	Play_Breathing			\Default Work Unit\Play_Breathing	
 	4138329421	Stop_Endgame_loops			\Default Work Unit\Stop_Endgame_loops	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1966881315	Switch_Time			\Default Work Unit\Switch_Time	
+
+Switch	ID	Name	Switch Group			Notes
+	787604482	Slow	Switch_Time			
+	1192079962	Urgent	Switch_Time			
 
 Effect plug-ins	ID	Name	Type				Notes
 	1588715066	Echoes_Linear	Wwise Delay			
@@ -31,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	150677986	Bass Drop High Impact 2	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact 2_E362E910.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact 2		589952
 	186127181	Industry Lid Plastic Tube Lid Opening 01	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Industry Lid Plastic Tube Lid Opening 01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Industry Lid Plastic Tube Lid Opening 01		24832
 	262945368	Bass Drop Interference	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop Interference_2B848FEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop Interference		329784
+	300890852	Slow	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\412750__blukotek__ticking-of-the-clock-02_51C1EBBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Communications\Stopwatch_Switch_Container\Slow		35524
 	308699503	Uhh soft 1	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Uhh soft 1_013D3003.wem		\Actor-Mixer Hierarchy\Default Work Unit\Target\Uhh soft 1		62664
 	444858503	Emergency Patrol Boat Siren Individual Siren Docked 01	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Emergency Patrol Boat Siren Individual Siren Docked 01_3931C834.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\City_Scape\Emergency Patrol Boat Siren Individual Siren Docked 01		1852900
 	464555132	Electrical Current Strong	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Electrical Current Strong_18BBDEB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Electrical Current Strong		169674
@@ -47,6 +56,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	855470072	crowd-talking-5	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\crowd-talking-5_6A803F86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crowd Noises\Crowd Talking\crowd-talking-5		1933096
 	889976677	Step 4	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Step 4_0DE36C32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Footsteps\Step 4		57696
 	892955703	Electric Crackle	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Electric Crackle_E95FC22E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Electric Crackle		287584
+	899786147	Urgent	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\412750__blukotek__ticking-of-the-clock-02_84213AD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Communications\Stopwatch_Switch_Container\Urgent		71620
 	907733002	Step 3	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Step 3_13DC3ED9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tranquillizer\Footsteps\Step 3		55480
 	908418349	26873__freqman__lightbulbwink	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\26873__freqman__lightbulbwink_C18F12B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\LightBulb\26873__freqman__lightbulbwink		105072
 	956697300	Bass Drop High Impact	C:\Users\micha\Documents\GitHub\Unity\Shot In The Dark\Marcus Audio\Game Off 2022\.cache\Windows\SFX\Bass Drop High Impact_ED5B171A.wem		\Actor-Mixer Hierarchy\Default Work Unit\EMP\Bass Drop High Impact		494492

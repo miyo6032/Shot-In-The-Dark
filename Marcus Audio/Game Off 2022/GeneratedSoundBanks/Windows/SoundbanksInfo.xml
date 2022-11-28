@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="679811984">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2645922273">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -161,6 +161,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3077001935" Name="Play_Stopwatch" ObjectPath="\Events\Default Work Unit\Play_Stopwatch" DurationType="OneShot" DurationMin="0.201037" DurationMax="0.405664">
+					<IncludedMemoryFiles>
+						<File Id="300890852" Language="SFX">
+							<ShortName>412750__blukotek__ticking-of-the-clock-02.wav</ShortName>
+							<Path>SFX\412750__blukotek__ticking-of-the-clock-02_51C1EBBD.wem</Path>
+						</File>
+						<File Id="899786147" Language="SFX">
+							<ShortName>412750__blukotek__ticking-of-the-clock-02.wav</ShortName>
+							<Path>SFX\412750__blukotek__ticking-of-the-clock-02_84213AD9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{AA2DEBE9-8ED3-46B7-BB73-0C544DE24765}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{AA2DEBE9-8ED3-46B7-BB73-0C544DE24765}">
+							<Media>
+								<File Id="300890852"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{341EBFEF-649A-496B-8497-D3D5FCC0E858}">
+							<Media>
+								<File Id="899786147"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3148844260" Name="Play_Win_Music" ObjectPath="\Events\Default Work Unit\Play_Win_Music" DurationType="OneShot" DurationMin="5.4" DurationMax="5.4">
 					<IncludedMemoryFiles>
 						<File Id="1063481656" Language="SFX">
@@ -211,6 +236,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1966881315" Name="Switch_Time" ObjectPath="\Switches\Default Work Unit\Switch_Time" GUID="{BF36527F-548A-489C-8DAE-FCB6CED22145}">
+					<Switches>
+						<Switch Id="787604482" Name="Slow" ObjectPath="\Switches\Default Work Unit\Switch_Time\Slow" GUID="{AA2DEBE9-8ED3-46B7-BB73-0C544DE24765}"/>
+						<Switch Id="1192079962" Name="Urgent" ObjectPath="\Switches\Default Work Unit\Switch_Time\Urgent" GUID="{341EBFEF-649A-496B-8497-D3D5FCC0E858}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

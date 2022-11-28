@@ -91,6 +91,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8239375181624606041}
+  lowTimeSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e909016a522cb2d498daa821f2ab193d, type: 2}
+  timerSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16bef02f4cb671f48b306ecc5649c134, type: 2}
 --- !u!1 &8239375181624606047
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,6 @@ namespace Game_Service.Services
         public void Init()
         {
             targetColor = randomColors[Random.Range(0, randomColors.Length)];
-            Debug.Log(targetColor.name);
             colorsNotTarget = randomColors.ToList();
             colorsNotTarget.Remove(targetColor);
         }

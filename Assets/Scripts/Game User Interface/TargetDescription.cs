@@ -12,7 +12,6 @@ namespace Game_User_Interface
 
         private void Start()
         {
-            Debug.Log("Target Description");
             descriptionText.text = "Wearing " +  FrontEndServiceProvider.GetService<IColorService>().GetTargetColorDescription() + " shirt.";
         }
     }
