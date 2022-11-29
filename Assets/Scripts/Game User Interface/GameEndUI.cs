@@ -13,5 +13,10 @@ namespace Game_User_Interface
             messageText.text = message;
             mainCanvas.gameObject.SetActive(true);
         }
+
+        public void HideUI()
+        {
+            mainCanvas.gameObject.SetActive(false);
+        }
     }
 }

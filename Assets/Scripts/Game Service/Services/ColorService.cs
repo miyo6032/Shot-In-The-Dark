@@ -9,7 +9,9 @@ namespace Game_Service.Services
     public class ColorService : MonoBehaviour, IColorService
     {
         [SerializeField] private ColorDesc[] randomColors;
+        [SerializeField] private Color[] skinColors;
         private ColorDesc targetColor;
+        private Color targetSkinColor;
         private List<ColorDesc> colorsNotTarget;
 
         public void Init()
@@ -17,6 +19,7 @@ namespace Game_Service.Services
             targetColor = randomColors[Random.Range(0, randomColors.Length)];
             colorsNotTarget = randomColors.ToList();
             colorsNotTarget.Remove(targetColor);
+            targetSkinColor = skinColors[Random.Range(0, skinColors.Length)];
         }
 
         public string GetTargetColorDescription()
@@ -27,6 +30,11 @@ namespace Game_Service.Services
         public Color GetTargetColor()
         {
             return targetColor.color;
+        }
+
+        public Color GetTargetSkinColor()
+        {
+            return targetSkinColor;
         }
 
         public Color GetRandomColor()

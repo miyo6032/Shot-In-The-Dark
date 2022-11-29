@@ -6,6 +6,7 @@ namespace Game_Service.Services
     {
         public string GetTargetColorDescription();
         public Color GetTargetColor();
+        public Color GetTargetSkinColor();
         public Color GetRandomColor();
     }
 }
