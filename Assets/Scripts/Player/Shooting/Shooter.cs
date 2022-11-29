@@ -2,6 +2,7 @@ using Game_Service;
 using Game_Service.Services;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using Util;
 using Event = AK.Wwise.Event;
 
@@ -14,6 +15,7 @@ namespace Player.Shooting
         [SerializeField] private float projectileSpeed;
         [SerializeField] private Transform visual;
         [SerializeField] private Animator animator;
+        [SerializeField] private Slider slider;
 
         [SerializeField] private Event shootSoundEvent;
         // [SerializeField] private Transform cannonPivot;
@@ -31,6 +33,9 @@ namespace Player.Shooting
             Vector2 direction2D = MathUtils.CalculateShootDirection2D(Input.mousePosition, transform.position);
             var rotationFromDirection = MathUtils.Get2DRotationFromDirection(direction2D);
             visual.rotation = rotationFromDirection;
+
+            var cooldownRatio = currentCooldown / cooldown;
+            slider.value = cooldownRatio;
 
             // cannonPivot.rotation = rotationFromDirection;
 
