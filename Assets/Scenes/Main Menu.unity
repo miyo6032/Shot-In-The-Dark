@@ -834,8 +834,6 @@ GameObject:
   - component: {fileID: 501082272}
   - component: {fileID: 501082276}
   - component: {fileID: 501082277}
-  - component: {fileID: 501082279}
-  - component: {fileID: 501082278}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -862,10 +860,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.050490882
-    y: 0.04987531
-    width: 0.8976157
-    height: 0.8977556
+    x: 0.12093863
+    y: -0.06260032
+    width: 0.57761735
+    height: 0.5778491
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -957,42 +955,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!114 &501082278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501082270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad80f0aa6af47f84f8e59a856397ff15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &501082279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501082270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a8a52f0a752cd44b454ee40b0db2a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &542382457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,6 +2207,36 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 932758850346750729, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
   m_PrefabInstance: {fileID: 1252516724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1252516726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 932758850346750728, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
+  m_PrefabInstance: {fileID: 1252516724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1252516727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 932758850346750730, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
+  m_PrefabInstance: {fileID: 1252516724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252516726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1252516728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252516726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a98eb894ae4d0ca2f3656132c40829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1252516727}
+  levelToLoad: {fileID: 11400000, guid: 58577f26845d8b645a584195cf2bbedf, type: 2}
 --- !u!1 &1254381102
 GameObject:
   m_ObjectHideFlags: 0
