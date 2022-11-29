@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Second Level.unity
     guid: a10f02ccb57970b4d9801cbb10cfe7dd
+  - enabled: 1
+    path: Assets/Scenes/Mission 1 Title Scene.unity
+    guid: 245aa8870ba569a4984ef10b4ff2f9dc
+  - enabled: 1
+    path: Assets/Scenes/Mission 2 Title Scene.unity
+    guid: d9b1a4d061c0f5f4698dc8b225ce2c7b
   m_configObjects: {}

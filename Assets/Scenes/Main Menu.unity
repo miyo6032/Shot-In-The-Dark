@@ -862,10 +862,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.51897323
-    y: 0.03968254
-    width: 0.71428573
-    height: 0.71428573
+    x: 0.050490882
+    y: 0.04987531
+    width: 0.8976157
+    height: 0.8977556
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -1172,7 +1172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932758851721999838, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
       propertyPath: m_text
-      value: Level 1
+      value: Mission 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 729477180}
-  levelToLoad: {fileID: 11400000, guid: 34362db4e0dca4e41b12a9f23f72e15e, type: 2}
+  levelToLoad: {fileID: 11400000, guid: a75c0449cc76ae840b06516bd2344d0d, type: 2}
 --- !u!1 &787963310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level Selection
+  m_text: Missions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a0be8e7a92f09441baabe94eec3e99c, type: 2}
   m_sharedMaterial: {fileID: 6381199636151425818, guid: 1a0be8e7a92f09441baabe94eec3e99c, type: 2}
@@ -2236,7 +2236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932758851721999838, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
       propertyPath: m_text
-      value: Level 3
+      value: Mission 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
@@ -2445,7 +2445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 932758851721999838, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
       propertyPath: m_text
-      value: Level 2
+      value: Mission 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b7395ecf99d294ea3db929dcca1757, type: 3}
@@ -2609,7 +2609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1344692269}
-  levelToLoad: {fileID: 11400000, guid: 32ac6417aeaf9674baec074409f5c04d, type: 2}
+  levelToLoad: {fileID: 11400000, guid: cd7a7191d2b438247adb591f4bbb8e6c, type: 2}
 --- !u!1 &1382941942
 GameObject:
   m_ObjectHideFlags: 0

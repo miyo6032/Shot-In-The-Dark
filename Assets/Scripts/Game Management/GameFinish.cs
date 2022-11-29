@@ -3,6 +3,7 @@ using Game_Service.Services;
 using Game_User_Interface;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Util;
 using Event = AK.Wwise.Event;
@@ -14,7 +15,7 @@ namespace Game_Management
         [SerializeField] private GameEndUI gameEndUI;
         [SerializeField] private CanvasGroup blackoutPanel;
         [SerializeField] private CanvasGroup dragVisuals;
-        [SerializeField] private SceneIndexProvider mainMenuScene;
+        [FormerlySerializedAs("mainMenuScene")] [SerializeField] private SceneIndexProvider sceneAfterWin;
         [SerializeField] private Event winMusic;
         [SerializeField] private Animator animator;
         [SerializeField] private Image dragImage;
@@ -53,7 +54,7 @@ namespace Game_Management
         {
             Time.timeScale = 0.2f;
             LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ShowWinningSequence);
-            LeanTween.delayedCall(gameObject, 6.0f * Time.timeScale, LoadMainMenu);
+            LeanTween.delayedCall(gameObject, 6.0f * Time.timeScale, LoadNextScene);
         }
 
         private void ShowWinningSequence()
@@ -83,10 +84,10 @@ namespace Game_Management
             LeanTween.delayedCall(gameObject, 2.0f * Time.timeScale, ReloadScene);
         }
 
-        private void LoadMainMenu()
+        private void LoadNextScene()
         {
             AkSoundEngine.StopAll();
-            SceneManager.LoadScene(mainMenuScene.Index);
+            SceneManager.LoadScene(sceneAfterWin.Index);
         }
 
         private void ReloadScene()
