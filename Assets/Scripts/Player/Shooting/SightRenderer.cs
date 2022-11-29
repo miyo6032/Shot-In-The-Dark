@@ -26,6 +26,7 @@ public class SightRenderer : MonoBehaviour
     public void Update()
     {
         if (GameServiceProvider.GetService<IGamePauseService>().IsGamePaused) return;
+        if (GameServiceProvider.GetService<IGameState>().GameState != GameState.IsDark) return;
         lineRenderer.enabled = rendererEnabled;
         
         var position = transform.position;
