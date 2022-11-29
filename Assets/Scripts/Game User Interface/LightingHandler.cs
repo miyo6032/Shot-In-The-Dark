@@ -10,7 +10,7 @@ using Event = AK.Wwise.Event;
 
 public class LightingHandler : MonoBehaviour, ILightingService
 {
-    public const float FadeTime = 1.0f;
+    public const float FadeTime = 1.2f;
     [SerializeField] List<LevelLight> levelLights;
     [SerializeField] Light2D globalLight;
     [SerializeField] private float targetGlobalLightIntensity;
