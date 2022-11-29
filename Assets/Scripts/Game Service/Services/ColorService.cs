@@ -8,18 +8,17 @@ namespace Game_Service.Services
 {
     public class ColorService : MonoBehaviour, IColorService
     {
-        [SerializeField] private ColorDesc[] randomColors;
-        [SerializeField] private Color[] skinColors;
+        [SerializeField] private EntityColors entityColors;
         private ColorDesc targetColor;
         private Color targetSkinColor;
         private List<ColorDesc> colorsNotTarget;
 
         public void Init()
         {
-            targetColor = randomColors[Random.Range(0, randomColors.Length)];
-            colorsNotTarget = randomColors.ToList();
+            targetColor = entityColors.randomColors[Random.Range(0, entityColors.randomColors.Length)];
+            colorsNotTarget = entityColors.randomColors.ToList();
             colorsNotTarget.Remove(targetColor);
-            targetSkinColor = skinColors[Random.Range(0, skinColors.Length)];
+            targetSkinColor = entityColors.skinColors[Random.Range(0, entityColors.skinColors.Length)];
         }
 
         public string GetTargetColorDescription()
@@ -42,7 +41,7 @@ namespace Game_Service.Services
             return colorsNotTarget[Random.Range(0, colorsNotTarget.Count)].color;
         }
     }
-    
+
     [Serializable]
     public class ColorDesc
     {

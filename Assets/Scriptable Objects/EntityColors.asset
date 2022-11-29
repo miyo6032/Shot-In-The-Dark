@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da46674a97ac4a1b8cc898e9adbe5812, type: 3}
+  m_Name: EntityColors
+  m_EditorClassIdentifier: 
+  randomColors:
+  - color: {r: 1, g: 0.3160377, b: 0.3160377, a: 1}
+    name: Red
+  - color: {r: 0, g: 0.73333335, b: 0.53333336, a: 1}
+    name: Green
+  - color: {r: 1, g: 1, b: 1, a: 1}
+    name: Grey
+  - color: {r: 0, g: 0, b: 0, a: 1}
+    name: Black
+  - color: {r: 0.47058824, g: 0.015686275, b: 0.63529414, a: 1}
+    name: Purple
+  skinColors:
+  - {r: 0.23529412, g: 0.18039216, b: 0.15686275, a: 1}
+  - {r: 0.7647059, g: 0.58431375, b: 0.50980395, a: 1}
+  - {r: 1, g: 0.80784315, b: 0.7058824, a: 1}
