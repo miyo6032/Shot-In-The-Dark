@@ -688,7 +688,17 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 32ac6417aeaf9674baec074409f5c04d, type: 2}
     - target: {fileID: 6143605611520514740, guid: 18e704e786480d94caf396d2f1e139dc, type: 3}
       propertyPath: m_text
-      value: Mission 2
+      value: 'Mission 2:
+
+        Long Shot'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143605611520514740, guid: 18e704e786480d94caf396d2f1e139dc, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143605611520514740, guid: 18e704e786480d94caf396d2f1e139dc, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18e704e786480d94caf396d2f1e139dc, type: 3}
