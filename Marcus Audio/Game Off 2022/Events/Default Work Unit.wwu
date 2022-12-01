@@ -5,13 +5,6 @@
 			<ChildrenList>
 				<Event Name="Crowd_Noise" ID="{A90D7A6C-7756-4E1F-BFD9-530139BE79AE}">
 					<ChildrenList>
-						<Action Name="" ID="{D71C7717-8FD2-4E00-944F-0E3E262B1C07}" ShortID="339718245">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Crowd Talking" ID="{701587FE-D41E-4C6B-9401-575DFD894605}" WorkUnitID="{6B4D1064-0326-4E86-8D40-3AC257FBDCF6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{AD7B0E0C-5045-4012-82D6-026ED310505D}" ShortID="109087343">
 							<ReferenceList>
 								<Reference Name="Target">
