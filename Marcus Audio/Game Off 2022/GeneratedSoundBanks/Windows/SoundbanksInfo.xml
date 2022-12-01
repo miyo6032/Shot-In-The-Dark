@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2645922273">
+		<SoundBank Id="3161908922" Language="SFX" Hash="509568638">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -26,18 +26,6 @@
 						<File Id="87964442" Language="SFX">
 							<ShortName>Crowd Footsteps.wav</ShortName>
 							<Path>SFX\Crowd Footsteps_D79FB2B7.wem</Path>
-						</File>
-						<File Id="545505773" Language="SFX">
-							<ShortName>crowd-talking-10.wav</ShortName>
-							<Path>SFX\crowd-talking-10_A8A52D7F.wem</Path>
-						</File>
-						<File Id="855470072" Language="SFX">
-							<ShortName>crowd-talking-5.wav</ShortName>
-							<Path>SFX\crowd-talking-5_6A803F86.wem</Path>
-						</File>
-						<File Id="976944957" Language="SFX">
-							<ShortName>crowd-talking-8.wav</ShortName>
-							<Path>SFX\crowd-talking-8_BE2F16CA.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -215,7 +203,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4138329421" Name="Stop_Endgame_loops" ObjectPath="\Events\Default Work Unit\Stop_Endgame_loops" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="1302021521" Name="Streetlight_Smash" ObjectPath="\Events\Default Work Unit\Streetlight_Smash" DurationType="OneShot" DurationMin="3.915604" DurationMax="3.915604">
+				<Event Id="1302021521" Name="Streetlight_Smash" ObjectPath="\Events\Default Work Unit\Streetlight_Smash" DurationType="OneShot" DurationMin="3.415604" DurationMax="3.415604">
 					<IncludedMemoryFiles>
 						<File Id="52824185" Language="SFX">
 							<ShortName>558969__sandb1ns__fluorescent-lightbulb-break.wav</ShortName>
@@ -227,11 +215,11 @@
 						</File>
 						<File Id="781321095" Language="SFX">
 							<ShortName>420651__deleted-user-228014__failing-lightbulb.wav</ShortName>
-							<Path>SFX\420651__deleted-user-228014__failing-lightbulb_5CB8576D.wem</Path>
+							<Path>SFX\420651__deleted-user-228014__failing-lightbulb_26857C95.wem</Path>
 						</File>
 						<File Id="908418349" Language="SFX">
 							<ShortName>26873__freqman__lightbulbwink.wav</ShortName>
-							<Path>SFX\26873__freqman__lightbulbwink_C18F12B8.wem</Path>
+							<Path>SFX\26873__freqman__lightbulbwink_95BF66DE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
